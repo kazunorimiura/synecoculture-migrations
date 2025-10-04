@@ -1,0 +1,85 @@
+<!-- wp:paragraph -->
+<p>L'Association générale incorporée Cineco Culture considère comme importantes toutes les informations personnelles obtenues dans le cadre de nos activités, et sous la Loi sur la protection des informations personnelles et les lois connexes, nous établissons par les présentes la politique de base suivante et nous nous engageons à traiter de manière appropriée les informations personnelles concernant nos clients.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Traitement des informations personnelles</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Respect des lois et réglementations</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lors du traitement d'informations personnelles (informations permettant d'identifier des individus spécifiques ; même principe ci-après), notre société respecte les obligations stipulées dans les directives publiées par la Commission de protection des informations personnelles et les agences gouvernementales compétentes concernant la Loi sur la protection des informations personnelles et autres lois relatives à la protection des informations personnelles, ainsi que cette politique.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Utilisation dans le cadre de l'objectif prévu</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Notre société traite les informations personnelles uniquement dans le cadre nécessaire pour atteindre l'objectif d'utilisation prédéterminé, sauf lorsque nous avons obtenu le consentement préalable de l'individu ou lorsque cela est autorisé par la loi.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Acquisition d'informations personnelles</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Notre société s'efforce d'acquérir des informations personnelles en indiquant clairement à l'avance les informations nécessaires telles que l'objectif d'utilisation, la portée des utilisateurs conjoints et le point de contact pour les demandes de renseignements, et en obtenant le consentement de l'individu. Lorsque les informations personnelles incluent des informations personnelles sensibles telles que la race et les convictions, nous n'acquérons pas d'informations personnelles sans le consentement de l'individu, sauf lorsque cela est autorisé par la loi. Lors de l'acquisition d'informations personnelles auprès d'un tiers, et lorsque des obligations légales de confirmation et de création d'enregistrements surviennent lors de la réception de telles provisions de tiers, nous respectons ces exigences.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Informations personnelles des clients de moins de 15 ans</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lorsqu'il existe une possibilité d'acquérir des informations personnelles auprès de clients de moins de 15 ans, notre société prend des considérations spéciales concernant le traitement des informations personnelles, comme indiquer clairement que les informations doivent être fournies avec le consentement de leur tuteur avant l'acquisition.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Mesures de gestion de la sécurité</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Notre société s'efforce de maintenir les informations personnelles qui nous sont confiées exactes et à jour dans le cadre de l'objectif d'utilisation, et met en œuvre des mesures de gestion de la sécurité nécessaires et appropriées conformément aux normes technologiques actuelles pour prévenir l'accès non autorisé, les fuites, l'altération, la perte, les dommages, etc., et apporte des corrections si nécessaire.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Supervision des sous-traitants</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Notre société peut confier le traitement d'informations personnelles à des tiers dans le cadre nécessaire pour atteindre l'objectif d'utilisation. Ces tiers sont sélectionnés après confirmation qu'ils ont des niveaux de sécurité suffisants concernant le traitement des informations personnelles, et nous fournissons une supervision nécessaire et appropriée par le biais de contrats et d'autres moyens.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Fourniture à des tiers</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Notre société ne fournit pas d'informations personnelles à des tiers sans obtenir le consentement de l'individu, sauf lorsque cela est autorisé par la loi. De plus, notre société ne fournit pas d'informations personnelles à des tiers en utilisant le système d'opt-out (Article 23, Paragraphe 2 de la Loi sur la protection des informations personnelles).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Réponse aux opinions et consultations</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Notre société répond de manière appropriée aux opinions et demandes concernant le traitement des informations personnelles, y compris la divulgation, la correction, la suspension d'utilisation (présentation de produits et services), la suppression et autres questions liées au traitement des informations personnelles, sur la base des dispositions légales. Veuillez contacter le point de contact désigné de l'entreprise où vous avez fourni vos informations personnelles.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Amélioration continue des systèmes internes</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Notre société s'efforce d'améliorer et de renforcer continuellement les systèmes internes, y compris la révision de cette politique, par l'établissement de superviseurs de gestion des informations personnelles, le développement de réglementations internes, l'éducation des dirigeants et employés, et la mise en œuvre d'audits internes appropriés, afin de traiter correctement les informations personnelles qui nous sont confiées.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"align":"right"} -->
+<p class="has-text-align-right">Établi : 1er mars 2019<br>Association générale incorporée Cineco Culture, Directeur représentant : Masatoshi Funahashi</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->

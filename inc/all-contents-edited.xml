@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wp="http://wordpress.org/export/1.2/" version="2.0">
+
+<channel>
+	<title>一般社団法人 シネコカルチャー</title>
+	<link>https://synecoinc.kzmr.work</link>
+	<description/>
+	<pubDate>Mon, 09 Jun 2025 07:34:21 +0000</pubDate>
+	<language>ja</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>https://synecoinc.kzmr.work</wp:base_site_url>
+	<wp:base_blog_url>https://synecoinc.kzmr.work</wp:base_blog_url>
+
+		<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[e-lab user]]></wp:author_login><wp:author_email><![CDATA[bn11015@shibaura-it.ac.jp]]></wp:author_email><wp:author_display_name><![CDATA[e-lab user]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+
+		<wp:term><wp:term_id>16</wp:term_id><wp:term_taxonomy><![CDATA[blog_cat]]></wp:term_taxonomy><wp:term_slug>essay-writers</wp:term_slug><wp:term_parent></wp:term_parent><wp:term_name>Essay Writers</wp:term_name></wp:term><wp:term><wp:term_id>14</wp:term_id><wp:term_taxonomy><![CDATA[blog_cat]]></wp:term_taxonomy><wp:term_slug>uncategorized</wp:term_slug><wp:term_parent></wp:term_parent><wp:term_name>uncategorized</wp:term_name></wp:term><wp:term><wp:term_id>1</wp:term_id><wp:term_taxonomy><![CDATA[blog_cat]]></wp:term_taxonomy><wp:term_slug>%e6%9c%aa%e5%88%86%e9%a1%9e</wp:term_slug><wp:term_parent></wp:term_parent><wp:term_name>未分類</wp:term_name></wp:term><wp:term><wp:term_id>9</wp:term_id><wp:term_taxonomy><![CDATA[blog_cat]]></wp:term_taxonomy><wp:term_slug>%e6%9c%aa%e5%88%86%e9%a1%9e-ja</wp:term_slug><wp:term_parent></wp:term_parent><wp:term_name>未分類</wp:term_name></wp:term><wp:term>
+		<wp:term_id>4</wp:term_id>
+		<wp:term_taxonomy><![CDATA[language]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[en]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[English]]></wp:term_name>
+		<wp:term_description><![CDATA[a:3:{s:6:"locale";s:5:"en_US";s:3:"rtl";i:0;s:9:"flag_code";s:2:"us";}]]></wp:term_description>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>5</wp:term_id>
+		<wp:term_taxonomy><![CDATA[term_language]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[pll_en]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[English]]></wp:term_name>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>16</wp:term_id>
+		<wp:term_taxonomy><![CDATA[blog_cat]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[essay-writers]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[Essay Writers]]></wp:term_name>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>3</wp:term_id>
+		<wp:term_taxonomy><![CDATA[nav_menu]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[mainmenu]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[MainMenu]]></wp:term_name>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>12</wp:term_id>
+		<wp:term_taxonomy><![CDATA[nav_menu]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[mainmenu_en]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[MainMenu_en]]></wp:term_name>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>6</wp:term_id>
+		<wp:term_taxonomy><![CDATA[term_translations]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[pll_5b0fbe1f014a9]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[pll_5b0fbe1f014a9]]></wp:term_name>
+		<wp:term_description><![CDATA[a:2:{s:2:"en";i:1;s:2:"ja";i:9;}]]></wp:term_description>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>11</wp:term_id>
+		<wp:term_taxonomy><![CDATA[post_translations]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[pll_5b0fbe952aa92]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[pll_5b0fbe952aa92]]></wp:term_name>
+		<wp:term_description><![CDATA[a:2:{s:2:"en";i:140;s:2:"ja";i:17;}]]></wp:term_description>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>13</wp:term_id>
+		<wp:term_taxonomy><![CDATA[post_translations]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[pll_5b0fc63ab9da3]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[pll_5b0fc63ab9da3]]></wp:term_name>
+		<wp:term_description><![CDATA[a:2:{s:2:"en";i:154;s:2:"ja";i:151;}]]></wp:term_description>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>15</wp:term_id>
+		<wp:term_taxonomy><![CDATA[term_translations]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[pll_5b83d45fbf174]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[pll_5b83d45fbf174]]></wp:term_name>
+		<wp:term_description><![CDATA[a:1:{s:2:"ja";i:14;}]]></wp:term_description>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>17</wp:term_id>
+		<wp:term_taxonomy><![CDATA[term_translations]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[pll_5b84275487cf4]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[pll_5b84275487cf4]]></wp:term_name>
+		<wp:term_description><![CDATA[a:1:{s:2:"ja";i:16;}]]></wp:term_description>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>14</wp:term_id>
+		<wp:term_taxonomy><![CDATA[blog_cat]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[uncategorized]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[uncategorized]]></wp:term_name>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>2</wp:term_id>
+		<wp:term_taxonomy><![CDATA[nav_menu]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[%e3%83%a1%e3%82%a4%e3%83%b3%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[メインメニュー]]></wp:term_name>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>7</wp:term_id>
+		<wp:term_taxonomy><![CDATA[language]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[ja]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[日本語]]></wp:term_name>
+		<wp:term_description><![CDATA[a:3:{s:6:"locale";s:2:"ja";s:3:"rtl";i:0;s:9:"flag_code";s:2:"jp";}]]></wp:term_description>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>8</wp:term_id>
+		<wp:term_taxonomy><![CDATA[term_language]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[pll_ja]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[日本語]]></wp:term_name>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>1</wp:term_id>
+		<wp:term_taxonomy><![CDATA[blog_cat]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[%e6%9c%aa%e5%88%86%e9%a1%9e]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[未分類]]></wp:term_name>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>9</wp:term_id>
+		<wp:term_taxonomy><![CDATA[blog_cat]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[%e6%9c%aa%e5%88%86%e9%a1%9e-ja]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[未分類]]></wp:term_name>
+	</wp:term>
+			<wp:term><wp:term_id>3</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[mainmenu]]></wp:term_slug><wp:term_name><![CDATA[MainMenu]]></wp:term_name>
+</wp:term>
+	<wp:term><wp:term_id>12</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[mainmenu_en]]></wp:term_slug><wp:term_name><![CDATA[MainMenu_en]]></wp:term_name>
+</wp:term>
+	<wp:term><wp:term_id>2</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[%e3%83%a1%e3%82%a4%e3%83%b3%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc]]></wp:term_slug><wp:term_name><![CDATA[メインメニュー]]></wp:term_name>
+</wp:term>
+
+			</channel>
+</rss>

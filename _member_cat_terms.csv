@@ -1,0 +1,5 @@
+taxonomy,term_name_ja,term_slug_ja,parent_slug_ja,term_name_en,term_slug_en,parent_slug_en,term_name_fr,term_slug_fr,parent_slug_fr,term_name_zh,term_slug_zh,parent_slug_zh,depth
+member_cat,代表理事,representative-director,,Representative Director,representative-director,,Directeur Représentant,representative-director,,代表理事,representative-director,,1
+member_cat,理事,director,,Director,director,,Directeur,director,,理事,director,,1
+member_cat,リサーチャー,researcher,,Researcher,researcher,,Chercheur,researcher,,研究员,researcher,,1
+member_cat,ナビゲーター,navigator,,Navigator,navigator,,Navigateur,navigator,,导航员,navigator,,1

@@ -1,0 +1,85 @@
+<!-- wp:paragraph -->
+<p>The General Incorporated Association Cineco Culture considers all personal information obtained through our activities to be important, and under the Personal Information Protection Act and related laws, we hereby establish the following basic policy and are committed to appropriate handling of personal information about our customers.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Handling of Personal Information</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Compliance with Laws and Regulations</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>When handling personal information (information that can identify specific individuals; the same applies hereinafter), our company complies with the obligations stipulated in the guidelines published by the Personal Information Protection Commission and relevant government agencies regarding the Personal Information Protection Act and other laws related to personal information protection, as well as this policy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Use Within the Scope of Intended Purpose</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Our company handles personal information only within the scope necessary to achieve the predetermined purpose of use, except when we have obtained prior consent from the individual or when permitted by law.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Acquisition of Personal Information</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Our company strives to acquire personal information by clearly indicating necessary information such as the purpose of use, scope of joint users, and contact point for inquiries in advance, and obtaining the consent of the individual. When personal information includes sensitive personal information such as race and creed, we do not acquire personal information without the consent of the individual, except when permitted by law. When acquiring personal information from a third party, and when legal obligations for confirmation and record creation arise upon receiving such third-party provision, we comply with these requirements.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Personal Information of Customers Under 15 Years of Age</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>When there is a possibility of acquiring personal information from customers under 15 years of age, our company takes special consideration regarding the handling of personal information, such as clearly indicating that the information should be provided with the consent of their guardian before acquisition.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Safety Management Measures</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Our company strives to keep the personal information entrusted to us accurate and up-to-date within the scope of the purpose of use, and implements necessary and appropriate safety management measures in line with current technological standards to prevent unauthorized access, leakage, alteration, loss, damage, etc., and makes corrections as necessary.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Supervision of Contractors</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Our company may entrust the handling of personal information to third parties within the scope necessary to achieve the purpose of use. These third parties are selected after confirming they have sufficient security levels regarding the handling of personal information, and we provide necessary and appropriate supervision through contracts and other means.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Provision to Third Parties</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Our company does not provide personal information to third parties without obtaining the consent of the individual, except when permitted by law. Furthermore, our company does not provide personal information to third parties using the opt-out system (Article 23, Paragraph 2 of the Personal Information Protection Act).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Response to Opinions and Consultations</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Our company responds appropriately to opinions and inquiries regarding the handling of personal information, including disclosure, correction, suspension of use (introduction of products and services), deletion, and other matters related to personal information handling, based on legal provisions. Please contact the designated contact point of the company where you provided your personal information.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Continuous Improvement of Internal Systems</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Our company strives for continuous strengthening and improvement of internal systems, including review of this policy, through the establishment of personal information management supervisors, development of internal regulations, education of executives and employees, and implementation of appropriate internal audits, in order to properly handle the personal information entrusted to us.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"align":"right"} -->
+<p class="has-text-align-right">Established: March 1, 2019<br>General Incorporated Association Cineco Culture, Representative Director: Masatoshi Funahashi</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->

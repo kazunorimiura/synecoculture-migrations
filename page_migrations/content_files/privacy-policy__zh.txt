@@ -1,0 +1,85 @@
+<!-- wp:paragraph -->
+<p>一般社团法人Cineco Culture（电影文化）将通过活动获得的所有个人信息视为重要信息，根据个人信息保护法及相关法令，制定以下基本方针，致力于妥善处理所收集的客户个人信息。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">个人信息的处理</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">法令遵守</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>本公司在处理个人信息（可识别特定个人的信息，以下同样适用）时，遵守个人信息保护法及其他个人信息保护相关法令中个人信息保护委员会及主管官厅公布的指导方针中规定的义务，以及本方针。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">在使用目的范围内使用</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>本公司除事先获得本人同意的情况及法令认可的情况外，仅在事先确定的使用目的达成所需的范围内处理个人信息。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">个人信息的获取</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>本公司努力事先明示使用目的、共同使用者范围、咨询窗口等必要信息，在获得本人同意的基础上获取个人信息。当个人信息包含种族、信仰等需要特别配虑的个人信息时，除法令认可的情况外，不会在未获得本人同意的情况下获取个人信息。从第三方获取个人信息时，如果法律上产生接受第三方提供时的确认义务及记录作成义务，我们将予以遵守。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">15岁以下客户的个人信息</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>本公司在可能从15岁以下客户获取个人信息的情况下，会明示在监护人同意的基础上提供等，对个人信息的处理给予特别配虑。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">安全管理措施</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>本公司努力在使用目的范围内将所托管的个人信息保持准确、最新的内容，为防止非法访问、泄露、篡改、灭失、损坏等，根据现时的技术水准采取必要且适当的安全管理措施，并根据需要进行改正。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">委托方的监督</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>本公司在使用目的达成所需的范围内，可能会将所托管的个人信息的处理委托给第三方。这些第三方在确认其个人信息处理具有充分的安全水准后进行选定，并通过合同等方式进行必要且适当的监督。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">向第三方提供</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>本公司除法令认可的情况外，不会在未获得本人同意的情况下向第三方提供个人信息。此外，本公司不会利用选择退出制度（个人信息保护法第23条第2项）向第三方提供个人信息。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">对意见、咨询的回应</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>本公司对于个人信息的公开、更正、使用停止（商品和服务的介绍）、删除及其他个人信息处理相关的意见和咨询，根据法令规定进行适当回应。请联系客户提供个人信息的公司所指定的窗口。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">内部体制的持续改善</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>本公司为妥善处理所托管的个人信息，通过设置个人信息管理负责人、完善内部规程、对董事及员工进行教育以及实施适当的内部审计等，努力持续强化和改善包括本方针修订在内的内部体制。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"align":"right"} -->
+<p class="has-text-align-right">制定日期：2019年3月1日<br>一般社团法人Cineco Culture（电影文化）代表理事：舩橋真俊</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
