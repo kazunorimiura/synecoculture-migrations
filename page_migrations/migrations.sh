@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # ./migrations/page_migrations/migrations.sh
+# メディアをインポートする場合:
+# ./migrations/page_migrations/migrations.sh --import-media
 
 set -a               # exportを自動で付与するモード
 source ./migrations/.env

@@ -138,8 +138,7 @@ $form_id = wp_insert_post(
 				'querystring' => false,
 				'usedb' => '0',
 
-				// 自動返信メール設定
-				'automatic_reply_email' => 'email',
+				// 管理者宛メール設定
 				'mail_subject' => '[' . get_bloginfo('name') . '] お問い合わせがありました',
 				'mail_from' => get_option('admin_email'),
 				'mail_sender' => get_bloginfo('name'),
@@ -150,7 +149,8 @@ $form_id = wp_insert_post(
 				'mail_bcc' => '',
 				'mail_return_path' => get_option('admin_email'),
 
-				// 管理者宛メール設定
+				// 自動返信メール設定
+				'automatic_reply_email' => 'email',
 				'admin_mail_reply_to' => get_option('admin_email'),
 				'admin_mail_subject' => '[' . get_bloginfo('name') . '] お問い合わせありがとうございます',
 				'admin_mail_from' => get_option('admin_email'),
