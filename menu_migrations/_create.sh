@@ -36,13 +36,20 @@ add_post_type_menu_item() {
   local post_type=$1
   local menu_id=$2
   local page_slug=$3
-  local language=$4  # 省略可能
-  local parent_id=$5 # 省略可能
+  local language=$4   # 省略可能
+  local parent_id=$5  # 省略可能
+  local menu_title=$6 # 省略可能(新規追加)
 
   # 親子関係の設定
   local parent_setting=""
   if [ -n "$parent_id" ]; then
     parent_setting=', "menu-item-parent-id" => '$parent_id
+  fi
+
+  # タイトルの設定
+  local title_setting='$page->post_title'
+  if [ -n "$menu_title" ]; then
+    title_setting='"'$menu_title'"'
   fi
 
   # 言語コードの処理とメッセージ作成
@@ -80,7 +87,7 @@ add_post_type_menu_item() {
   # メニューアイテムの追加
   local result=$(wp eval "$page_code"'
   $menu_item_id = wp_update_nav_menu_item( '$menu_id', 0, array(
-    "menu-item-title" => $page->post_title,
+    "menu-item-title" => '$title_setting',
     "menu-item-object-id" => $page->ID,
     "menu-item-object" => "page",
     "menu-item-status" => "publish",
@@ -246,7 +253,7 @@ add_post_type_menu_item page $menu_id "about/company-profile" "" $menu_item_id
 add_post_type_menu_item page $menu_id "about/history" "" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $menu_id "learn")
 add_post_type_menu_item page $menu_id "learn/about-synecoculture" "" $menu_item_id
-add_post_type_menu_item project $menu_id "syneco-portal" "" $menu_item_id
+add_post_type_menu_item project $menu_id "syneco-portal" "" $menu_item_id "シネコポータル"
 add_post_type_menu_item page $menu_id "manual" "" $menu_item_id
 add_post_type_menu_item page $menu_id "case-studies" "" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $menu_id "projects")
@@ -280,7 +287,7 @@ add_post_type_menu_item page $tr_menu_id "about/company-profile" "en" $menu_item
 add_post_type_menu_item page $tr_menu_id "about/history" "en" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "en")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "en" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "en" $menu_item_id
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "en" $menu_item_id "Syneco Portal"
 add_post_type_menu_item page $tr_menu_id "manual" "en" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "en" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "en")
@@ -314,7 +321,7 @@ add_post_type_menu_item page $tr_menu_id "about/company-profile" "fr" $menu_item
 add_post_type_menu_item page $tr_menu_id "about/history" "fr" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "fr")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "fr" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "fr" $menu_item_id
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "fr" $menu_item_id "Portail Syneco"
 add_post_type_menu_item page $tr_menu_id "manual" "fr" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "fr" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "fr")
@@ -348,7 +355,7 @@ add_post_type_menu_item page $tr_menu_id "about/company-profile" "zh" $menu_item
 add_post_type_menu_item page $tr_menu_id "about/history" "zh" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "zh")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "zh" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "zh" $menu_item_id
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "zh" $menu_item_id "Syneco门户"
 add_post_type_menu_item page $tr_menu_id "manual" "zh" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "zh" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "zh")
@@ -440,7 +447,7 @@ add_post_type_menu_item page $menu_id "about/company-profile" "" $menu_item_id
 add_post_type_menu_item page $menu_id "about/history" "" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $menu_id "learn")
 add_post_type_menu_item page $menu_id "learn/about-synecoculture" "" $menu_item_id
-add_post_type_menu_item project $menu_id "syneco-portal" "" $menu_item_id
+add_post_type_menu_item project $menu_id "syneco-portal" "" $menu_item_id "シネコポータル"
 add_post_type_menu_item page $menu_id "manual" "" $menu_item_id
 add_post_type_menu_item page $menu_id "case-studies" "" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $menu_id "projects")
@@ -478,7 +485,7 @@ add_post_type_menu_item page $tr_menu_id "about/company-profile" "en" $menu_item
 add_post_type_menu_item page $tr_menu_id "about/history" "en" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "en")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "en" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "en" $menu_item_id
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "en" $menu_item_id "Syneco Portal"
 add_post_type_menu_item page $tr_menu_id "manual" "en" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "en" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "en")
@@ -516,7 +523,7 @@ add_post_type_menu_item page $tr_menu_id "about/company-profile" "fr" $menu_item
 add_post_type_menu_item page $tr_menu_id "about/history" "fr" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "fr")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "fr" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "fr" $menu_item_id
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "fr" $menu_item_id "Portail Syneco"
 add_post_type_menu_item page $tr_menu_id "manual" "fr" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "fr" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "fr")
@@ -554,7 +561,7 @@ add_post_type_menu_item page $tr_menu_id "about/company-profile" "zh" $menu_item
 add_post_type_menu_item page $tr_menu_id "about/history" "zh" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "zh")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "zh" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "zh" $menu_item_id
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "zh" $menu_item_id "Syneco门户"
 add_post_type_menu_item page $tr_menu_id "manual" "zh" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "zh" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "zh")
@@ -755,7 +762,7 @@ add_post_type_menu_item page $menu_id "about/company-profile" "" $menu_item_id
 add_post_type_menu_item page $menu_id "about/history" "" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $menu_id "learn")
 add_post_type_menu_item page $menu_id "learn/about-synecoculture" "" $menu_item_id
-add_post_type_menu_item project $menu_id "syneco-portal" "" $menu_item_id
+add_post_type_menu_item project $menu_id "syneco-portal" "" $menu_item_id "シネコポータル"
 add_post_type_menu_item page $menu_id "manual" "" $menu_item_id
 add_post_type_menu_item page $menu_id "case-studies" "" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $menu_id "projects")
@@ -792,7 +799,7 @@ add_post_type_menu_item page $tr_menu_id "about/company-profile" "en" $menu_item
 add_post_type_menu_item page $tr_menu_id "about/history" "en" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "en")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "en" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "en" $menu_item_id
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "en" $menu_item_id "Syneco Portal"
 add_post_type_menu_item page $tr_menu_id "manual" "en" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "en" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "en")
@@ -829,7 +836,7 @@ add_post_type_menu_item page $tr_menu_id "about/company-profile" "fr" $menu_item
 add_post_type_menu_item page $tr_menu_id "about/history" "fr" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "fr")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "fr" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "fr" $menu_item_id
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "fr" $menu_item_id "Portail Syneco"
 add_post_type_menu_item page $tr_menu_id "manual" "fr" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "fr" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "fr")
@@ -866,7 +873,7 @@ add_post_type_menu_item page $tr_menu_id "about/company-profile" "zh" $menu_item
 add_post_type_menu_item page $tr_menu_id "about/history" "zh" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "zh")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "zh" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "zh" $menu_item_id
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "zh" $menu_item_id "Syneco门户"
 add_post_type_menu_item page $tr_menu_id "manual" "zh" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "zh" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "zh")

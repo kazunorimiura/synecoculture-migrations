@@ -117,11 +117,20 @@ wp eval-file ./migrations/page_migrations/create-contact-form.php
 ### ホームページのSCFを更新
 ###
 
-
 if [ "$IMPORT_MEDIA" == "--import-media" ]; then
   ./migrations/page_migrations/scf_contents/migrations.sh --import-media
 else
   ./migrations/page_migrations/scf_contents/migrations.sh
+fi
+
+###
+### その他の固定ページのマイグレーション
+###
+
+if [ "$IMPORT_MEDIA" == "--import-media" ]; then
+  ./migrations/page_migrations/other_contents/migrations.sh --import-media
+else
+  ./migrations/page_migrations/other_contents/migrations.sh
 fi
 
 ###
