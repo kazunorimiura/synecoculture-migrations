@@ -26,29 +26,49 @@ for post_id in $post_ids; do
   ###
 
   # 【インタビュー記事掲載】未来の食を考えるウェブメディア「What To Eat ?」
-  if [ "$post_id" == 3442 ]; then
-    wp post update 3442 --post_type="post" --post_category=$category_media
-  fi
+  target_ids=$(wp post list --post_type=blog --name="post-3442" --field=ID)
+  for target_id in $target_ids; do
+    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
+    if [ "$lang" == "ja" ]; then
+      wp post update $target_id --post_type="post" --post_category=$category_media
+    fi
+  done
 
   # ラジオ出演のお知らせ
-  if [ "$post_id" == 67 ]; then
-    wp post update 67 --post_type="post" --post_category=$category_media
-  fi
+  target_ids=$(wp post list --post_type=blog --name="post-67" --field=ID)
+  for target_id in $target_ids; do
+    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
+    if [ "$lang" == "ja" ]; then
+      wp post update $target_id --post_type="post" --post_category=$category_media
+    fi
+  done
 
   # 寄付金使用報告：2020年
-  if [ "$post_id" == 3098 ]; then
-    wp post update 3098 --post_type="post" --post_category=$category_donate
-  fi
+  target_ids=$(wp post list --post_type=blog --name="post-3098" --field=ID)
+  for target_id in $target_ids; do
+    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
+    if [ "$lang" == "ja" ]; then
+      wp post update $target_id --post_type="post" --post_category=$category_media
+    fi
+  done
 
   # 寄附金使用報告：2021年
-  if [ "$post_id" == 3302 ]; then
-    wp post update 3302 --post_type="post" --post_category=$category_donate
-  fi
+  target_ids=$(wp post list --post_type=blog --name="post-3302" --field=ID)
+  for target_id in $target_ids; do
+    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
+    if [ "$lang" == "ja" ]; then
+      wp post update $target_id --post_type="post" --post_category=$category_media
+    fi
+  done
 
   # シネコカルチャー研究航海 プロダクトスポンサー募集のお知らせ
-  if [ "$post_id" == 92 ]; then
-    wp post update 92 --post_type="post" --post_category=$category_sponsorship
-  fi
+  target_ids=$(wp post list --post_type=blog --name="post-92" --field=ID)
+  for target_id in $target_ids; do
+    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
+    if [ "$lang" == "ja" ]; then
+      wp post update $target_id --post_type="post" --post_category=$category_media
+    fi
+  done
 
   ###
   ### 投稿を英語版へコピー
