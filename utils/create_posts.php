@@ -1,8 +1,11 @@
 <?php
 /**
- * WordPress投稿作成スクリプト
+ * WordPress投稿作成スクリプト（post_date対応版）
  * 使用方法: wp eval-file create_posts.php post_type target_lang_slug content_dir title_mapping_file
  * 例: wp eval-file create_posts.php page ja ./migrations/page_migrations/content_files ./migrations/page_migrations/content_files/title_mapping.csv
+ *
+ * CSV形式:
+ * post_slug,lang_slug,title,parent_slug,excerpt,post_date
  */
 
 // コマンドライン引数を取得（wp eval-fileでは$args変数に格納される）
@@ -36,6 +39,9 @@ function load_title_mapping($file_path) {
         return $mapping;
     }
 
+    // ヘッダー行をスキップ
+    $header = fgetcsv($handle);
+
     while (($data = fgetcsv($handle)) !== false) {
         if (count($data) >= 5) {
             $post_slug = $data[0];
@@ -43,11 +49,13 @@ function load_title_mapping($file_path) {
             $title = $data[2];
             $parent_slug = !empty($data[3]) ? $data[3] : null;
             $excerpt = !empty($data[4]) ? $data[4] : null;
+            $post_date = (count($data) >= 6 && !empty($data[5])) ? $data[5] : null;
 
             $mapping[$post_slug][$lang_slug] = [
                 'title' => $title,
                 'parent_slug' => $parent_slug,
-                'excerpt' => $excerpt ?: '' // null の場合は空文字列にする
+                'excerpt' => $excerpt ?: '',
+                'post_date' => $post_date
             ];
         }
     }
@@ -134,12 +142,7 @@ function copy_post_for_language($original_post_id, $lang_slug) {
  * 言語情報を置き換える
  */
 function replace_languages_provided($post_id, $languages) {
-    // この部分は元のスクリプトのreplace_languages_provided関数に相当
-    // 実装は使用している多言語プラグインに依存します
-
     echo "言語情報を設定中: " . implode(', ', $languages) . "\n";
-
-    // プレースホルダー実装
     update_post_meta($post_id, '_languages_provided', $languages);
 }
 
@@ -158,10 +161,12 @@ function create_single_post($post_slug, $target_lang_slug, $parent_id, $content_
     }
 
     $title = $mapping_info['title'];
-    $excerpt = $mapping_info['excerpt'] ?: ''; // null の場合は空文字列にする
+    $excerpt = $mapping_info['excerpt'] ?: '';
+    $post_date = $mapping_info['post_date'];
 
     echo "    タイトル: {$title}\n";
     echo "    抜粋: {$excerpt}\n";
+    echo "    投稿日時: {$post_date}\n";
 
     // コンテンツファイルを読み込む
     if (!file_exists($content_file)) {
@@ -179,8 +184,14 @@ function create_single_post($post_slug, $target_lang_slug, $parent_id, $content_
         'post_name' => $post_slug,
         'post_content' => $content,
         'post_status' => 'publish',
-        'post_excerpt' => $excerpt ?: '' // 確実に文字列にする
+        'post_excerpt' => $excerpt ?: ''
     ];
+
+    // post_dateが指定されている場合は追加
+    if ($post_date) {
+        $post_data['post_date'] = $post_date;
+        $post_data['post_date_gmt'] = get_gmt_from_date($post_date);
+    }
 
     // 親ページが指定されている場合
     if ($parent_id) {
@@ -211,11 +222,13 @@ function create_single_post($post_slug, $target_lang_slug, $parent_id, $content_
         }
 
         $related_title = $related_mapping['title'];
-        $related_excerpt = $related_mapping['excerpt'] ?: ''; // null の場合は空文字列にする
+        $related_excerpt = $related_mapping['excerpt'] ?: '';
+        $related_post_date = $related_mapping['post_date'];
         $related_content = file_get_contents($related_file);
 
         echo "    タイトル: {$related_title}\n";
         echo "    抜粋: {$related_excerpt}\n";
+        echo "    投稿日時: {$related_post_date}\n";
         echo "    内容: " . substr($related_content, 0, 100) . "...\n";
 
         // 言語版投稿を作成
@@ -228,8 +241,14 @@ function create_single_post($post_slug, $target_lang_slug, $parent_id, $content_
                 'ID' => $tr_post_id,
                 'post_title' => $related_title,
                 'post_content' => $related_content,
-                'post_excerpt' => $related_excerpt ?: '' // 確実に文字列にする
+                'post_excerpt' => $related_excerpt ?: ''
             ];
+
+            // post_dateが指定されている場合は追加
+            if ($related_post_date) {
+                $update_data['post_date'] = $related_post_date;
+                $update_data['post_date_gmt'] = get_gmt_from_date($related_post_date);
+            }
 
             wp_update_post($update_data);
             $languages_found[] = $lang;
@@ -262,13 +281,42 @@ try {
         throw new Exception("対象言語のコンテンツファイルが見つかりません");
     }
 
+    // CSVに記載されている順序でpost_slugのリストを作成
+    $ordered_post_slugs = [];
+    $handle = fopen($title_mapping_file, 'r');
+    if ($handle !== false) {
+        // ヘッダー行をスキップ
+        fgetcsv($handle);
+
+        while (($data = fgetcsv($handle)) !== false) {
+            if (count($data) >= 1) {
+                $post_slug = $data[0];
+                $lang_slug = $data[1];
+
+                // 対象言語の行のみを記録（重複を防ぐ）
+                if ($lang_slug === $target_lang_slug && !in_array($post_slug, $ordered_post_slugs)) {
+                    $ordered_post_slugs[] = $post_slug;
+                }
+            }
+        }
+        fclose($handle);
+    }
+
+    echo "\n=== CSV順での投稿作成を開始します ===\n";
+    echo "処理順序: " . implode(', ', $ordered_post_slugs) . "\n";
+
     // 作成済み投稿を記録する配列
     $created_posts = [];
 
     echo "\n=== 1段階目: 親ページの作成 ===\n";
 
-    // 1段階目: 親ページを作成
-    foreach ($content_files as $post_slug => $file) {
+    // 1段階目: CSV順で親ページを作成
+    foreach ($ordered_post_slugs as $post_slug) {
+        // コンテンツファイルが存在するかチェック
+        if (!isset($content_files[$post_slug])) {
+            continue;
+        }
+
         $mapping_info = $title_mapping[$post_slug][$target_lang_slug] ?? null;
         if (!$mapping_info) {
             continue;
@@ -285,7 +333,7 @@ try {
             $post_slug,
             $target_lang_slug,
             null,
-            $file,
+            $content_files[$post_slug],
             $title_mapping,
             $content_dir,
             $post_type
@@ -299,8 +347,13 @@ try {
 
     echo "\n=== 2段階目: 子ページの作成 ===\n";
 
-    // 2段階目: 子ページを作成
-    foreach ($content_files as $post_slug => $file) {
+    // 2段階目: CSV順で子ページを作成
+    foreach ($ordered_post_slugs as $post_slug) {
+        // コンテンツファイルが存在するかチェック
+        if (!isset($content_files[$post_slug])) {
+            continue;
+        }
+
         $mapping_info = $title_mapping[$post_slug][$target_lang_slug] ?? null;
         if (!$mapping_info) {
             continue;
@@ -326,7 +379,7 @@ try {
             $post_slug,
             $target_lang_slug,
             $parent_id,
-            $file,
+            $content_files[$post_slug],
             $title_mapping,
             $content_dir,
             $post_type

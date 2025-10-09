@@ -63,6 +63,15 @@ for post_id in $post_ids; do
     wp post term add $post_id member_cat researcher
   elif [ "$post_slug" == "ryota-sakayama" ]; then
     wp post term add $post_id member_cat researcher
+  elif [ "$post_slug" == "kousaku-ohta" ]; then
+    message "kousaku-ohta"
+
+    result=$(get_multilingual_media_ids "kousaku-ohta.jpg" "$MEDIA_PATH" "$IMPORT_MEDIA")
+    parse_media_ids "$result"
+    echo "メディアID: ${media_ids[default]}, ${media_ids[en]}, ${media_ids[fr]}, ${media_ids[zh]}"
+    wp post meta update $post_id _thumbnail_id "${media_ids[default]}"
+
+    wp post term add $post_id member_cat researcher
   elif [ "$post_slug" == "shinnosuke-yoshikawa" ]; then
     wp post term add $post_id member_cat researcher
   elif [ "$post_slug" == "satoru-okamoto" ]; then
