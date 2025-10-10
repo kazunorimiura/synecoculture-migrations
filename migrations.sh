@@ -14,104 +14,111 @@ IMPORT_MEDIA=$1
 
 SECONDS=0
 
-###
-### 必須プラグインを有効化
-###
-
-./migrations/_install_plugins.sh
-
-###
-### `wp-multibyte-patch` プラグインを無効化
-### NOTE: 旧画像の日本語ファイル名が変更されるのを防ぐため
-###
-
-wp plugin deactivate wp-multibyte-patch
-
-###
-### WordPressのデフォルトコンテンツ等をクリーンアップ
-###
-
-./migrations/utils/cleanup_posts.sh post
-./migrations/utils/cleanup_posts.sh page
-
-###
-### パーマリンク構造を更新
-###
-
-wp option update permalink_structure '/news/%postname%/'
-
-###
-### テーマを有効化
-###
-
-wp theme activate synecoculture
-
-###
-### Polylangセットアップ
-###
-
-wp eval-file ./migrations/polylang/add-languages.php
-wp eval-file ./migrations/polylang/assign-default-lang.php
-wp eval-file ./migrations/polylang/activate-polylang-license.php
-wp eval-file ./migrations/polylang/enable-polylang-sync.php
-wp eval-file ./migrations/polylang/enable-polylang-cpt.php
-wp eval-file ./migrations/polylang/enable-polylang-media.php
-wp eval-file ./migrations/polylang/update-string-translation.php
-
-###
-### AkismetプラグインのAPIキーを設定する
-###
-
-./migrations/akismet/migrations.sh
-
-###
-### reCAPTCHAのサイトキー、シークレットキーを設定する（MW WP Form reCAPTCHAプラグイン用）
-###
-
-./migrations/recaptcha/migrations.sh
-
-###
-### メディアのインポート
-###
-
-# wp import migrations/inc/media.xml --authors=skip --skip=image_resize
-wp import migrations/blog/media.xml --authors=skip --skip=image_resize
-
-###
-### taxのインポート
-###
-
-# wp import migrations/inc/all-contents-edited.xml --authors=skip --skip=attachment,image_resize
-wp import migrations/blog/all-contents-edited.xml --authors=skip --skip=attachment,image_resize
-
-
-###
-### ブログのインポート
-###
-
-wp import migrations/blog/posts-edited.xml --authors=skip --skip=image_resize
-
 # ###
-# ### 固定ページのインポート
+# ### 必須プラグインを有効化
 # ###
 
-# # NOTE: 古い固定ページはどれも使わなそうなのでインポートしないことにした
-# # wp import migrations/inc/pages.xml --authors=skip --skip=image_resize
+# ./migrations/_install_plugins.sh
 
-###
-### URLリネーム
-###
+# ###
+# ### `wp-multibyte-patch` プラグインを無効化
+# ### NOTE: 旧画像の日本語ファイル名が変更されるのを防ぐため
+# ###
 
-./migrations/_url_rename.sh
+# wp plugin deactivate wp-multibyte-patch
 
-###
-### タームを作成
-###
+# ###
+# ### WordPressのデフォルトコンテンツ等をクリーンアップ
+# ###
 
-./migrations/utils/create_terms.sh migrations/_category_terms.csv category
-./migrations/utils/create_terms.sh migrations/_member_cat_terms.csv member_cat
-./migrations/utils/create_terms.sh migrations/_project_cat_terms.csv project_cat
-./migrations/utils/create_terms.sh migrations/_project_domain_terms.csv project_domain
+# ./migrations/utils/cleanup_posts.sh post
+# ./migrations/utils/cleanup_posts.sh page
+
+# ###
+# ### パーマリンク構造を更新
+# ###
+
+# wp option update permalink_structure '/news/%postname%/'
+
+# ###
+# ### テーマを有効化
+# ###
+
+# wp theme activate synecoculture
+
+# ###
+# ### Polylangセットアップ
+# ###
+
+# wp eval-file ./migrations/polylang/add-languages.php
+# wp eval-file ./migrations/polylang/assign-default-lang.php
+# wp eval-file ./migrations/polylang/activate-polylang-license.php
+# wp eval-file ./migrations/polylang/enable-polylang-sync.php
+# wp eval-file ./migrations/polylang/enable-polylang-cpt.php
+# wp eval-file ./migrations/polylang/enable-polylang-media.php
+# wp eval-file ./migrations/polylang/update-string-translation.php
+
+# ###
+# ### AkismetプラグインのAPIキーを設定する
+# ###
+
+# ./migrations/akismet/migrations.sh
+
+# ###
+# ### reCAPTCHAのサイトキー、シークレットキーを設定する（MW WP Form reCAPTCHAプラグイン用）
+# ###
+
+# ./migrations/recaptcha/migrations.sh
+
+# ###
+# ### メディアのインポート
+# ###
+
+# # wp import migrations/inc/media.xml --authors=skip --skip=image_resize
+# # wp import migrations/blog/media.xml --authors=skip --skip=image_resize
+# wp eval-file ./migrations/create-attachments-from-files.php
+
+# ###
+# ### メディアのサイズバリエーションを再生成（未生成のもののみ対象）
+# ###
+
+# ./migrations/_regenerate_media.sh
+
+# ###
+# ### taxのインポート
+# ###
+
+# # wp import migrations/inc/all-contents-edited.xml --authors=skip --skip=attachment,image_resize
+# wp import migrations/blog/all-contents-edited.xml --authors=skip --skip=attachment,image_resize
+
+
+# ###
+# ### ブログのインポート
+# ###
+
+# wp import migrations/blog/posts-edited.xml --authors=skip --skip=attachment,image_resize
+
+# # ###
+# # ### 固定ページのインポート
+# # ###
+
+# # # NOTE: 古い固定ページはどれも使わなそうなのでインポートしないことにした
+# # # wp import migrations/inc/pages.xml --authors=skip --skip=image_resize
+
+# ###
+# ### URLリネーム
+# ###
+
+# ./migrations/_url_rename.sh
+
+# ###
+# ### タームを作成
+# ###
+
+# ./migrations/utils/create_terms.sh migrations/_category_terms.csv category
+# ./migrations/utils/create_terms.sh migrations/_member_cat_terms.csv member_cat
+# ./migrations/utils/create_terms.sh migrations/_project_cat_terms.csv project_cat
+# ./migrations/utils/create_terms.sh migrations/_project_domain_terms.csv project_domain
 
 ###
 ### ブログマイグレーション
@@ -161,6 +168,26 @@ else
 fi
 
 ###
+### no-image画像を設定
+###
+
+if [ "$IMPORT_MEDIA" == "--import-media" ]; then
+  ./migrations/theme_mod/no_image/migrations.sh --import-media
+else
+  ./migrations/theme_mod/no_image/migrations.sh
+fi
+
+###
+### ogp画像を設定
+###
+
+if [ "$IMPORT_MEDIA" == "--import-media" ]; then
+  ./migrations/theme_mod/ogp_image/migrations.sh --import-media
+else
+  ./migrations/theme_mod/ogp_image/migrations.sh
+fi
+
+###
 ### メニューマイグレーション
 ###
 
@@ -179,12 +206,6 @@ wp plugin activate wp-multibyte-patch
 wp plugin deactivate users-customers-import-export-for-wp-woocommerce
 
 ###
-### メディアのサイズバリエーションを再生成（未生成のもののみ対象。旧ブログのメディアには画像サイズバリエーションが一切なかった）
-###
-
-./migrations/_regenerate_media.sh
-
-###
 ### Polylangの言語ごとの投稿数カウントを手動設定
 ### Polylangのバグなのか、コードでサブ言語を作成するとメディアの翻訳もカウントしてしまい、カウント数がおかしくなる。
 ### どうしようもないので、DBにある実際の投稿数をもとにカウント数を再計算している。
@@ -192,10 +213,5 @@ wp plugin deactivate users-customers-import-export-for-wp-woocommerce
 
 ./migrations/polylang/fix_polylang_counts.sh
 
-###
-### フロントページでは、URL にページ名や ID ではなく言語コードを使用するオプションを有効化
-###
-
-wp eval-file ./migrations/polylang/update-redirect-lang.php
 
 echo "処理時間 (migrations/migrations.sh): ${SECONDS}秒"

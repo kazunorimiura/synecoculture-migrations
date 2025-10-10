@@ -48,7 +48,7 @@ for post_id in $post_ids; do
   for target_id in $target_ids; do
     lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
     if [ "$lang" == "ja" ]; then
-      wp post update $target_id --post_type="post" --post_category=$category_media
+      wp post update $target_id --post_type="post" --post_category=$category_donate
     fi
   done
 
@@ -57,7 +57,7 @@ for post_id in $post_ids; do
   for target_id in $target_ids; do
     lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
     if [ "$lang" == "ja" ]; then
-      wp post update $target_id --post_type="post" --post_category=$category_media
+      wp post update $target_id --post_type="post" --post_category=$category_donate
     fi
   done
 
@@ -66,7 +66,7 @@ for post_id in $post_ids; do
   for target_id in $target_ids; do
     lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
     if [ "$lang" == "ja" ]; then
-      wp post update $target_id --post_type="post" --post_category=$category_media
+      wp post update $target_id --post_type="post" --post_category=$category_sponsorship
     fi
   done
 

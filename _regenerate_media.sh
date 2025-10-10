@@ -3,7 +3,7 @@
 # ./migrations/_regenerate_media.sh
 
 ###
-### メディアのサイズバリエーションを再生成（未生成のもののみ対象。旧ブログのメディアには画像サイズバリエーションが一切なかった）
+### メディアのサイズバリエーションを再生成（未生成のもののみ対象）
 ###
 
 # wp media regenerate --only-missing --yes

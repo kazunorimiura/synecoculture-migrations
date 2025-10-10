@@ -14,7 +14,7 @@ IMPORT_MEDIA=$1
 
 MEDIA_PATH=/srv/www/synecoculture/migrations/page_migrations/scf_contents/media
 WP_UPLOADS_DIR="http://synecoculture.test/wp-content/uploads"
-WP_NEW_UPLOADS_DATE_DIR="2025/09"  # 年月ディレクトリパスは実行する年月によって適宜修正
+WP_NEW_UPLOADS_DATE_DIR="2025/10"  # 年月ディレクトリパスは実行する年月によって適宜修正
 
 ### 画像の定義 ###
 
@@ -746,7 +746,7 @@ for post_id in $post_ids; do
     wp post meta add $post_id _wpf_top__our_story__image_3 $story_3_id__zh
 
     wp post meta add $post_id _wpf_top__our_approach__cover_image $our_approach_cover_id__zh
-    wp post meta add $post_id _wpf_top__our_approach__cover_text '超越自然，创造自然。'
+    wp post meta add $post_id _wpf_top__our_approach__cover_text '超越自然，<br>创造自然。'
     wp post meta add $post_id _wpf_top__our_approach__heading '我们致力于推广"增强生态系统"，以终结经济发展与环境破坏之间的权衡关系，实现真正可持续的社会。'
     wp post meta add $post_id _wpf_top__our_approach__body '"增强生态系统"是指主要通过利用植物来人为提高生物多样性的生态系统概念。已经证明，从这种生态系统中可以获得超越自然状态的生态系统服务，我们认为朝着利用这些服务方向的经济发展是实现真正可持续社会的关键。'
 

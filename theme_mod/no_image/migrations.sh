@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# ./migrations/ogp_image/migrations.sh
+# ./migrations/theme_mod/no_image/migrations.sh
 # メディアをインポートする場合:
-# ./migrations/ogp_image/migrations.sh --import-media
+# ./migrations/theme_mod/no_image/migrations.sh --import-media
 
 # 各種ライセンスキーは.envファイルで定義
 
@@ -14,11 +14,11 @@ source ./migrations/utils/message.sh
 
 IMPORT_MEDIA=$1
 
-MEDIA_PATH=/srv/www/synecoculture/migrations/ogp_image/media
+MEDIA_PATH=/srv/www/synecoculture/migrations/theme_mod/no_image/media
 WP_UPLOADS_DIR="http://synecoculture.test/wp-content/uploads"
 WP_NEW_UPLOADS_DATE_DIR="2025/10"  # 年月ディレクトリパスは実行する年月によって適宜修正
 
-# シネコな話バナーの背景画像を定義
+# no-image画像を定義
 FILE_NAME="no-image.png"
 if [ "$IMPORT_MEDIA" == "--import-media" ]; then
   file_id=$(wp media import "$MEDIA_PATH/${FILE_NAME}" --porcelain)

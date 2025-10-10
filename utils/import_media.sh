@@ -4,7 +4,7 @@
 # =============================================================================
 
 WP_UPLOADS_DIR="http://synecoculture.test/wp-content/uploads"
-WP_NEW_UPLOADS_DATE_DIR="2025/09"
+WP_NEW_UPLOADS_DATE_DIR="2025/10"
 
 # WordPress多言語メディア処理関数
 # 引数:

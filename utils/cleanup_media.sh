@@ -2,4 +2,5 @@
 
 # ./migrations/utils/cleanup_media.sh
 
-wp post delete $(wp post list --post_type=attachment --format=ids) --force
+# wp post delete $(wp post list --post_type=attachment --format=ids) --force
+./migrations/utils/cleanup_posts.sh attachment
