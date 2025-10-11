@@ -30,8 +30,6 @@ wp eval-file ./migrations/utils/create_posts.php project ja ./migrations/project
 
 MEDIA_PATH=/srv/www/synecoculture/migrations/projects/media
 
-
-
 post_type="project"
 post_ids=$(wp post list --post_type="$post_type" --field=ID)
 for post_id in $post_ids; do

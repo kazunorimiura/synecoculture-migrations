@@ -1,14 +1,15 @@
 #!/bin/bash
 
-# `{post_type}_section` タクソノミーの順序をもとに投稿のメニューオーダーを設定する
+# `member_cat` タクソノミーの順序をもとに投稿のメニューオーダーを設定する
 
-# ./migrate/update_menu_order.sh <POST_TYPE> <TAXONOMY> <POST_ID>
+# ./migrations/members/update_menu_order.sh <POST_ID>
 
-post_type=$1
-taxonomy=$2
-post_id=$3
+post_id=$1
 
 source ./migrations/utils/message.sh
+
+post_type="member"
+taxonomy="member_cat"
 
 lang=$(wp eval "echo pll_get_post_language('$post_id', 'slug');")
 
@@ -23,7 +24,7 @@ message "term_ids: $term_ids"
 
 orders=()
 
-# タームとその親および祖先の `_wpf_order` 属性値の合計を取得
+# タームとその親および祖先の `_wpf_term_order` 属性値の合計を取得
 for term_id in $term_ids; do
   message "Term ID: $term_id"
   # ここに各term_idに対する処理を追加
@@ -35,7 +36,7 @@ for term_id in $term_ids; do
     \$term_id = $term_id;
     \$taxonomy = '$taxonomy';
     \$term = get_term( \$term_id, \$taxonomy );
-    echo (int) get_term_meta( \$term->term_id, '_wpf_order', true );
+    echo (int) get_term_meta( \$term->term_id, '_wpf_term_order', true );
   ")
   message "Term order: $order"
   orders+=($order)

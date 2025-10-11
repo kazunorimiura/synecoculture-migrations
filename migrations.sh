@@ -14,111 +14,111 @@ IMPORT_MEDIA=$1
 
 SECONDS=0
 
-# ###
-# ### 必須プラグインを有効化
-# ###
+###
+### 必須プラグインを有効化
+###
 
-# ./migrations/_install_plugins.sh
+./migrations/_install_plugins.sh
 
-# ###
-# ### `wp-multibyte-patch` プラグインを無効化
-# ### NOTE: 旧画像の日本語ファイル名が変更されるのを防ぐため
-# ###
+###
+### `wp-multibyte-patch` プラグインを無効化
+### NOTE: 旧画像の日本語ファイル名が変更されるのを防ぐため
+###
 
-# wp plugin deactivate wp-multibyte-patch
+wp plugin deactivate wp-multibyte-patch
 
-# ###
-# ### WordPressのデフォルトコンテンツ等をクリーンアップ
-# ###
+###
+### WordPressのデフォルトコンテンツ等をクリーンアップ
+###
 
-# ./migrations/utils/cleanup_posts.sh post
-# ./migrations/utils/cleanup_posts.sh page
+./migrations/utils/cleanup_posts.sh post
+./migrations/utils/cleanup_posts.sh page
 
-# ###
-# ### パーマリンク構造を更新
-# ###
+###
+### パーマリンク構造を更新
+###
 
-# wp option update permalink_structure '/news/%postname%/'
+wp option update permalink_structure '/news/%postname%/'
 
-# ###
-# ### テーマを有効化
-# ###
+###
+### テーマを有効化
+###
 
-# wp theme activate synecoculture
+wp theme activate synecoculture
 
-# ###
-# ### Polylangセットアップ
-# ###
+###
+### Polylangセットアップ
+###
 
-# wp eval-file ./migrations/polylang/add-languages.php
-# wp eval-file ./migrations/polylang/assign-default-lang.php
-# wp eval-file ./migrations/polylang/activate-polylang-license.php
-# wp eval-file ./migrations/polylang/enable-polylang-sync.php
-# wp eval-file ./migrations/polylang/enable-polylang-cpt.php
-# wp eval-file ./migrations/polylang/enable-polylang-media.php
-# wp eval-file ./migrations/polylang/update-string-translation.php
+wp eval-file ./migrations/polylang/add-languages.php
+wp eval-file ./migrations/polylang/assign-default-lang.php
+wp eval-file ./migrations/polylang/activate-polylang-license.php
+wp eval-file ./migrations/polylang/enable-polylang-sync.php
+wp eval-file ./migrations/polylang/enable-polylang-cpt.php
+wp eval-file ./migrations/polylang/enable-polylang-media.php
+wp eval-file ./migrations/polylang/update-string-translation.php
 
-# ###
-# ### AkismetプラグインのAPIキーを設定する
-# ###
+###
+### AkismetプラグインのAPIキーを設定する
+###
 
-# ./migrations/akismet/migrations.sh
+./migrations/akismet/migrations.sh
 
-# ###
-# ### reCAPTCHAのサイトキー、シークレットキーを設定する（MW WP Form reCAPTCHAプラグイン用）
-# ###
+###
+### reCAPTCHAのサイトキー、シークレットキーを設定する（MW WP Form reCAPTCHAプラグイン用）
+###
 
-# ./migrations/recaptcha/migrations.sh
+./migrations/recaptcha/migrations.sh
 
-# ###
-# ### メディアのインポート
-# ###
+###
+### メディアのインポート
+###
 
-# # wp import migrations/inc/media.xml --authors=skip --skip=image_resize
-# # wp import migrations/blog/media.xml --authors=skip --skip=image_resize
-# wp eval-file ./migrations/create-attachments-from-files.php
+# wp import migrations/inc/media.xml --authors=skip --skip=image_resize
+# wp import migrations/blog/media.xml --authors=skip --skip=image_resize
+wp eval-file ./migrations/create-attachments-from-files.php
 
-# ###
-# ### メディアのサイズバリエーションを再生成（未生成のもののみ対象）
-# ###
+###
+### メディアのサイズバリエーションを再生成（未生成のもののみ対象）
+###
 
-# ./migrations/_regenerate_media.sh
+./migrations/_regenerate_media.sh
 
-# ###
-# ### taxのインポート
-# ###
+###
+### taxのインポート
+###
 
-# # wp import migrations/inc/all-contents-edited.xml --authors=skip --skip=attachment,image_resize
-# wp import migrations/blog/all-contents-edited.xml --authors=skip --skip=attachment,image_resize
+# wp import migrations/inc/all-contents-edited.xml --authors=skip --skip=attachment,image_resize
+wp import migrations/blog/all-contents-edited.xml --authors=skip --skip=attachment,image_resize
 
 
-# ###
-# ### ブログのインポート
-# ###
+###
+### ブログのインポート
+###
 
-# wp import migrations/blog/posts-edited.xml --authors=skip --skip=attachment,image_resize
-
-# # ###
-# # ### 固定ページのインポート
-# # ###
-
-# # # NOTE: 古い固定ページはどれも使わなそうなのでインポートしないことにした
-# # # wp import migrations/inc/pages.xml --authors=skip --skip=image_resize
+wp import migrations/blog/posts-edited.xml --authors=skip --skip=attachment,image_resize
 
 # ###
-# ### URLリネーム
+# ### 固定ページのインポート
 # ###
 
-# ./migrations/_url_rename.sh
+# # NOTE: 古い固定ページはどれも使わなそうなのでインポートしないことにした
+# # wp import migrations/inc/pages.xml --authors=skip --skip=image_resize
 
-# ###
-# ### タームを作成
-# ###
+###
+### URLリネーム
+###
 
-# ./migrations/utils/create_terms.sh migrations/_category_terms.csv category
-# ./migrations/utils/create_terms.sh migrations/_member_cat_terms.csv member_cat
-# ./migrations/utils/create_terms.sh migrations/_project_cat_terms.csv project_cat
-# ./migrations/utils/create_terms.sh migrations/_project_domain_terms.csv project_domain
+./migrations/_url_rename.sh
+
+###
+### タームを作成
+###
+
+./migrations/utils/create_terms.sh migrations/_category_terms.csv category
+./migrations/utils/create_terms.sh migrations/_member_cat_terms.csv member_cat
+./migrations/utils/create_terms.sh migrations/_project_cat_terms.csv project_cat
+./migrations/utils/create_terms.sh migrations/_project_domain_terms.csv project_domain
 
 ###
 ### ブログマイグレーション

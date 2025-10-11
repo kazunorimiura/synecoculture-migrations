@@ -135,7 +135,7 @@ for line in $(tail -n +2 "$source_file"); do
   \$translations['zh'] = \$zh['term_id'];
 
   pll_save_term_translations(\$translations);
-  update_term_meta( \$ja['term_id'], '_wpf_order', \$depth * \$counter );
+  update_term_meta( \$ja['term_id'], '_wpf_term_order', \$depth * \$counter );
   echo json_encode(\$translations);
   ")
   message "TRANSLATIONS: $translations"

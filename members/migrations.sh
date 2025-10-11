@@ -79,4 +79,6 @@ for post_id in $post_ids; do
   elif [ "$post_slug" == "kei-fukuda" ]; then
     wp post term add $post_id member_cat navigator
   fi
+
+  ./migrations/members/update_menu_order.sh $post_id
 done
