@@ -97,6 +97,12 @@ wp eval-file ./migrations/create-attachments-from-files.php
 ./migrations/update_img_sizes/after.sh
 
 ###
+### 新しいコンテンツで使う画像をアップロード
+###
+
+./migrations/upload_new_image/migrations.sh
+
+###
 ### taxのインポート
 ###
 
