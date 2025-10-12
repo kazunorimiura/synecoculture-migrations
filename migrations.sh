@@ -71,6 +71,12 @@ wp eval-file ./migrations/polylang/update-string-translation.php
 ./migrations/recaptcha/migrations.sh
 
 ###
+### 旧画像サイズバリエーションを設定 ※旧コンテンツで参照されている画像のリンク切れを防ぐため
+###
+
+./migrations/update_img_sizes/before.sh
+
+###
 ### メディアのインポート
 ###
 
@@ -83,6 +89,12 @@ wp eval-file ./migrations/create-attachments-from-files.php
 ###
 
 ./migrations/_regenerate_media.sh
+
+###
+### 新しい画像サイズバリエーションを設定
+###
+
+./migrations/update_img_sizes/after.sh
 
 ###
 ### taxのインポート
