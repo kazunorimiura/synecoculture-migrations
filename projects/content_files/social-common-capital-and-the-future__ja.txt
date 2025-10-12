@@ -1,3 +1,91 @@
+<!-- wp:image {"id":9023,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2025/01/kyoto-univ-members-1024x343.jpg" alt="" class="wp-image-9023"/></figure>
+<!-- /wp:image -->
+
 <!-- wp:paragraph -->
-<p>※準備中</p>
+<p>京都大学・社会的共通資本と未来寄附研究部門は、教育・医療・環境といった社会基盤を、経済学者の宇沢弘文氏が提唱する「社会的共通資本」として捉え直し、その持続可能なあり方を探究する研究機関です。研究成果を学術界の外に開かれたものとして、豊かな社会の実現に向けた知見の共有や問題提起を行うと同時に、さまざまな社会的セクターと連携しながら、未来に向けた社会的インパクトの創出を目指しています。</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[wpf_rich_link url="https://sccf.ifohs.kyoto-u.ac.jp/ja/" text="京都大学・社会的共通資本と未来寄附研究部門" sub_text="sccf.ifohs.kyoto-u.ac.jp" image_url="http://synecoculture.test/wp-content/uploads/2025/10/social-common-capital-and-the-future.jpg" target="_blank"]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p>2025年4月以降、本研究部門は人と社会の未来研究院から成長戦略本部へ移管し、「Beyond 2050 社会的共通資本研究部門」として継続しています。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[wpf_rich_link url="https://www.beyond2050.iac.kyoto-u.ac.jp/lp/" text="Beyond 2050 社会的共通資本研究部門" sub_text="www.beyond2050.iac.kyoto-u.ac.jp" image_url="http://synecoculture.test/wp-content/uploads/2025/10/beyond_2025_og_img.jpg" target="_blank"]
+<!-- /wp:shortcode -->
+
+<!-- wp:shortcode -->
+[wpf_news_posts heading_text="参加メンバー" body_text="当社団からは以下のメンバーが参画しています。拡張生態系の知見をもとに、社会的共通資本の枠組みを、自然資源の再生産過程を含めた「自然-社会共通資本」に広げていくという観点から、理論化と普及に取り組んでいます。" taxonomy="member_tag" term="social-common-capital-and-the-future" cta_link="http://synecoculture.test/member/tag/social-common-capital-and-the-future/"]
+<!-- /wp:shortcode -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">主な活動</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>本研究部門の中心にある取り組みは、教育・医療・環境といった分野を軸に「社会的共通資本」という知の基盤を築くことです。公開シンポジウムやセミナー、さまざまな社会的セクターとの対話を通じて、社会的共通資本をどう守り、次世代へ継承するかを多角的に議論し、その成果を社会に発信しています。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">京都大学 人と社会の未来研究院「社会的共通資本と未来」寄附研究部門創設記念シンポジウム Beyond Capitalism 〜拡張する社会的共通資本〜</h3>
+<!-- /wp:heading -->
+
+<!-- wp:shortcode -->
+[wpf_rich_link url="https://note.com/sccf_ifohs/n/n94a7105eeb1f" text="京都大学 人と社会の未来研究院「社会的共通資本と未来」寄附研究部門創設記念シンポジウム Beyond Capitalism 〜拡張する社会的共通資本〜 を実施しました：2022年7月23日" image_url="http://synecoculture.test/wp-content/uploads/2025/10/rectangle_large_type_2_ee4135f4845a3fac7319abfd9b50633d.webp" target="_blank"]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p>本研究部門の発足を記念するシンポジウムに当社団の代表理事で本研究部門の特定教授を務める舩橋が登壇しました。拡張生態系の研究が社会的共通資本とどう関わり、どう拡張していくのか、さらには資本市場の価値に偏重することなく、社会にとって大切なものを守っていくにはどうすればよいのかについて講演しています。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">自然資本と地域・人間・社会をつなぐ―社会的共通資本の新たな展望</h3>
+<!-- /wp:heading -->
+
+<!-- wp:shortcode -->
+[wpf_rich_link url="https://note.com/sccf_ifohs/n/n13765ebf0258" text="自然資本と地域・人間・社会をつなぐ―社会的共通資本の新たな展望イベントレポート" image_url="http://synecoculture.test/wp-content/uploads/2025/10/rectangle_large_type_2_f0fcb142935bfcfb2686136be47dd6a4.webp" target="_blank"]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p>「自然資本と地域・人間・社会をつなぐ」をテーマに社会的共通資本の新たな展望を議論するセミナーが開催されました。当社団からは舩橋、鈴木、河岡が登壇し、社会的共通資本に自然資源の再生産過程を含めた「自然-社会共通資本」について講演しています。拡張生態系の理論的基盤や最新研究、事例などを紹介しながら、生態系の再生・拡張を社会基盤の構築や健康の向上へと結びつけるシネコカルチャーの枠組みを提示しました。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">生物多様性のビッグウェーブに備えるための拡張生態系と協生農法：Tokyo Regenerative Food Lab(#6) 『WIRED』日本版</h3>
+<!-- /wp:heading -->
+
+<!-- wp:shortcode -->
+[wpf_rich_link url="https://note.com/sccf_ifohs/n/nd1793e2ce96e" text="【ポッドキャストエピソードに舩橋 真俊特定教授が登場】生物多様性のビッグウェーブに備えるための拡張生態系と協生農法：Tokyo Regenerative Food Lab(#6)　『WIRED』日本版" image_url="http://synecoculture.test/wp-content/uploads/2025/10/rectangle_large_type_2_8f0ee5a52a64013baf05e2149d66944f.webp" target="_blank"]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p>「Tokyo Regenerative Food Lab」のポッドキャストに代表理事の舩橋が登壇しました。食を起点に、わたしたちの暮らしや社会、都市の未来をかたちづくる新しいムーヴメントの可能性や実践を紹介し、生物多様性のビッグウェーブに備えるための拡張生態系と協生農法について講演しています。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>その他の活動については、Beyond 2050 社会的共通資本研究部門の<a href="https://note.com/sccf_ifohs" target="_blank" rel="noreferrer noopener">公式note</a>をご覧ください。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">ご寄付をお考えの方へ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>本研究部門の取り組みをご支援いただく窓口として基金を設けています。特定の一民間企業からの寄附で運営されることが多い通例の寄附講座とは異なり、研究の独立性と多様性を重視し、さまざまなセクターからご参加いただくことを目指しています。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[wpf_rich_link url="https://www.beyond2050.iac.kyoto-u.ac.jp/contact/" text="京都大学・社会的共通資本研究のための基金" sub_text="payment.kikin.kyoto-u.ac.jp" image_url="http://synecoculture.test/wp-content/uploads/2025/10/kyoto-univ-ogimage.png" target="_blank"]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph {"fontSize":"text-sm"} -->
+<p class="has-text-sm-font-size">※ご寄附の際は、通信欄に「社会的共通資本研究部門宛」とご記載ください。本研究を指定したご寄附になります。ご記載のない場合は大学全体のために活用されます。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[wpf_news_posts heading_text="最新情報" taxonomy="post_tag" term="social-common-capital-and-the-future" cta_link="http://synecoculture.test/news/tag/social-common-capital-and-the-future/"]
+<!-- /wp:shortcode -->
