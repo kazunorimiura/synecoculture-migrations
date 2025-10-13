@@ -46,10 +46,13 @@ for post_id in $post_ids; do
     wp post meta update $post_id _thumbnail_id "${media_ids[default]}"
 
     wp post term add $post_id member_cat representative-director
+
+    wp post term add $post_id member_tag "social-common-capital-and-the-future"
   elif [ "$post_slug" == "kengo-nagahashi" ]; then
     wp post term add $post_id member_cat director
   elif [ "$post_slug" == "godai-suzuki" ]; then
     wp post term add $post_id member_cat director
+    wp post term add $post_id member_tag "social-common-capital-and-the-future"
   elif [ "$post_slug" == "yoko-honjo" ]; then
     message "yoko-honjo"
 
@@ -61,6 +64,7 @@ for post_id in $post_ids; do
     wp post term add $post_id member_cat director
   elif [ "$post_slug" == "tatsuya-kawaoka" ]; then
     wp post term add $post_id member_cat researcher
+    wp post term add $post_id member_tag "social-common-capital-and-the-future"
   elif [ "$post_slug" == "ryota-sakayama" ]; then
     wp post term add $post_id member_cat researcher
   elif [ "$post_slug" == "kousaku-ohta" ]; then
@@ -74,6 +78,7 @@ for post_id in $post_ids; do
     wp post term add $post_id member_cat researcher
   elif [ "$post_slug" == "shinnosuke-yoshikawa" ]; then
     wp post term add $post_id member_cat researcher
+    wp post term add $post_id member_tag "social-common-capital-and-the-future"
   elif [ "$post_slug" == "satoru-okamoto" ]; then
     wp post term add $post_id member_cat navigator
   elif [ "$post_slug" == "kei-fukuda" ]; then

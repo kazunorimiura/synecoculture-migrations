@@ -1,5 +1,5 @@
 <!-- wp:paragraph -->
-<p>L'Association générale incorporée Cineco Culture considère comme importantes toutes les informations personnelles obtenues dans le cadre de nos activités, et sous la Loi sur la protection des informations personnelles et les lois connexes, nous établissons par les présentes la politique de base suivante et nous nous engageons à traiter de manière appropriée les informations personnelles concernant nos clients.</p>
+<p>L'Association Synecoculture. considère comme importantes toutes les informations personnelles obtenues dans le cadre de nos activités, et sous la Loi sur la protection des informations personnelles et les lois connexes, nous établissons par les présentes la politique de base suivante et nous nous engageons à traiter de manière appropriée les informations personnelles concernant nos clients.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":2} -->
@@ -80,6 +80,6 @@
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"align":"right"} -->
-<p class="has-text-align-right">Établi : 1er mars 2019<br>Association générale incorporée Cineco Culture, Directeur représentant : Masatoshi Funahashi</p>
+<p class="has-text-align-right">Établi : 1er mars 2019<br>Association Synecoculture., Directeur représentant : Masatoshi Funahashi</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

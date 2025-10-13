@@ -19,7 +19,7 @@
 <!-- /wp:shortcode -->
 
 <!-- wp:shortcode -->
-[wpf_news_posts heading_text="参加メンバー" body_text="当社団からは以下のメンバーが参画しています。拡張生態系の知見をもとに、社会的共通資本の枠組みを、自然資源の再生産過程を含めた「自然-社会共通資本」に広げていくという観点から、理論化と普及に取り組んでいます。" taxonomy="member_tag" term="social-common-capital-and-the-future" cta_link="http://synecoculture.test/member/tag/social-common-capital-and-the-future/"]
+[wpf_member_posts heading_text="参加メンバー" body_text="当社団からは以下のメンバーが参画しています。拡張生態系の知見をもとに、社会的共通資本の枠組みを、自然資源の再生産過程を含めた「自然-社会共通資本」に広げていくという観点から、理論化と普及に取り組んでいます。" taxonomy="member_tag" term="social-common-capital-and-the-future" cta_link="http://synecoculture.test/member/tag/social-common-capital-and-the-future/"]
 <!-- /wp:shortcode -->
 
 <!-- wp:heading -->

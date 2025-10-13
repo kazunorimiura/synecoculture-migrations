@@ -1,5 +1,5 @@
 <!-- wp:paragraph -->
-<p>一般社团法人Cineco Culture（电影文化）将通过活动获得的所有个人信息视为重要信息，根据个人信息保护法及相关法令，制定以下基本方针，致力于妥善处理所收集的客户个人信息。</p>
+<p>Synecoculture协会将通过活动获得的所有个人信息视为重要信息，根据个人信息保护法及相关法令，制定以下基本方针，致力于妥善处理所收集的客户个人信息。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":2} -->
@@ -80,6 +80,6 @@
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"align":"right"} -->
-<p class="has-text-align-right">制定日期：2019年3月1日<br>一般社团法人Cineco Culture（电影文化）代表理事：舩橋真俊</p>
+<p class="has-text-align-right">制定日期：2019年3月1日<br>Synecoculture协会代表理事：舩橋真俊</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

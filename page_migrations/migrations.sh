@@ -124,13 +124,13 @@ else
 fi
 
 ###
-### その他の固定ページのマイグレーション
+### カバー画像のマイグレーション
 ###
 
 if [ "$IMPORT_MEDIA" == "--import-media" ]; then
-  ./migrations/page_migrations/other_contents/migrations.sh --import-media
+  ./migrations/page_migrations/cover_media/migrations.sh --import-media
 else
-  ./migrations/page_migrations/other_contents/migrations.sh
+  ./migrations/page_migrations/cover_media/migrations.sh
 fi
 
 ###

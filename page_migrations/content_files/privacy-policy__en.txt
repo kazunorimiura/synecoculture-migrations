@@ -1,5 +1,5 @@
 <!-- wp:paragraph -->
-<p>The General Incorporated Association Cineco Culture considers all personal information obtained through our activities to be important, and under the Personal Information Protection Act and related laws, we hereby establish the following basic policy and are committed to appropriate handling of personal information about our customers.</p>
+<p>The Synecoculture Association considers all personal information obtained through our activities to be important, and under the Personal Information Protection Act and related laws, we hereby establish the following basic policy and are committed to appropriate handling of personal information about our customers.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":2} -->
@@ -80,6 +80,6 @@
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"align":"right"} -->
-<p class="has-text-align-right">Established: March 1, 2019<br>General Incorporated Association Cineco Culture, Representative Director: Masatoshi Funahashi</p>
+<p class="has-text-align-right">Established: March 1, 2019<br>Synecoculture Association, Representative Director: Masatoshi Funahashi</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
