@@ -1,3 +1,11 @@
 <!-- wp:paragraph -->
-<p>※En préparation</p>
+<p>拡張生態系の仕組みをわかりやすく学べる入門キット・シネコポータルの開発に取り組んでいます。近所のホームセンターや園芸店で購入できる資材を使って小さな農園をつくり、健全な表土が育まれる過程を体験しながら学ぶことができます。1日4時間の日照、水と空気、土と植物があれば、どこでも始めることができる初心者向けの教材です。</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[wpf_rich_link url="https://www.sonycsl.co.jp/wp-content/uploads/2020/10/synecokit_ver033j20201018.pdf" text="拡張生態系入門キット・シネコポータル" sub_text="www.sonycsl.co.jp" image_url="http://synecoculture.test/wp-content/uploads/2025/10/syneco-portal.jpg" target="_blank"]
+<!-- /wp:shortcode -->
+
+<!-- wp:shortcode -->
+[wpf_news_posts heading_text="最新情報" taxonomy="post_tag" term="syneco-portal" cta_link="http://synecoculture.test/news/tag/syneco-portal/"]
+<!-- /wp:shortcode -->

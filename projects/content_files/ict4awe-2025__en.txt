@@ -1,3 +1,31 @@
 <!-- wp:paragraph -->
-<p>※Under preparation</p>
+<p>河岡辰弥研究員が、2025年4月6日から8日までポルトガルで開催された第11回国際高齢化とeヘルスのための情報通信技術会議（ICT4AWE）で論文を発表しました。</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">発表論文</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>「Open Complex Systems Approach Utilizing ICT to Address Immune-Related Diseases in Aging Society」<br>著者: Kawaoka, Tatsuya and Sakayama, Ryota and Ohta, Kousaku and Funabashi, Masatoshi</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[wpf_tiny_head text="論文解説"]
+<!-- /wp:shortcode -->
+
+<!-- wp:shortcode -->
+[wpf_rich_link url="http://synecoculture.test/projects/academics-and-research/peer-peviewed-paper/open-complex-systems-approach/" text="高齢化社会における免疫関連疾患へのICT活用によるオープン・コンプレックス・システム・アプローチ" sub_text="査読論文"]
+<!-- /wp:shortcode -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">ICT4AWE国際会議について</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>ICT4AWEは、高齢者の健康と福祉向上のための情報通信技術に関する世界有数の国際学術会議です。世界各国から研究者、実践者、政策立案者が集結し、最新の研究成果と実践事例を共有する権威ある学術フォーラムとして位置づけられています。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[wpf_project_posts heading_text="関連プロジェクト" taxonomy="project_domain" term="healthcare" cta_link="http://synecoculture.test/project/domain/healthcare/"]
+<!-- /wp:shortcode -->

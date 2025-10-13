@@ -1,3 +1,55 @@
 <!-- wp:paragraph -->
-<p>※准备中</p>
+<p>高齢化社会で急増する認知症やパーキンソン病などの免疫関連疾患に対して、ICTプラットフォームと生態系アプローチを統合した個人化医療システムを開発し、その治療効果を検証しました。生態系機能と個別化医療を統合したオープン複雑系アプローチの有効性を実証した研究です。</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">研究内容</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>60種類のバイオマーカーと臨床面接データの多変量解析により、個人の代謝特性を5つのカテゴリー（炎症性、ストレス関連、糖毒性、毒性、萎縮性）に分類</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>100㎡の放棄農地を高生物多様性環境（約100種の植物）に転換し、軽運動と農作業を組み合わせたリハビリテーション環境を構築</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>専門スタッフによるライフスタイル指導と生態系機能を活用した包括的ケアプログラムを実施</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">主な成果</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>認知機能テスト（MoCA）で3ヶ月間に平均3.5ポイント改善を達成（従来の薬物療法の進行遅延効果の6.5倍に相当）</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>パーキンソン病患者のUPDRSスコア改善、脳血管障害後患者の血圧・歩行速度の改善を確認</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>高生物多様性環境で栽培された粗茶の摂取が117名の高齢者のリハビリテーション効果を有意に向上させることを発見</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>この研究により、人の健康と生態系の相互促進を実現するプラネタリーヘルスの実用化が進展するとともに、一人当たり13〜17万ドルの社会保障費削減効果が期待できる持続可能な医療システムの実現に向けた重要な科学的基盤が確立されました。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[wpf_tiny_head text="論文を読む"]
+<!-- /wp:shortcode -->
+
+<!-- wp:shortcode -->
+[wpf_rich_link url="https://www.scitepress.org/PublicationsDetail.aspx?ID=3hA3Vi2eTbA=&t=1" text="Open Complex Systems Approach Utilizing ICT to Address Immune-Related Diseases in Aging Society" sub_text="www.scitepress.org" image_url="http://synecoculture.test/wp-content/uploads/2025/10/scitepress-eyecatch.png" target="_blank"]
+<!-- /wp:shortcode -->
+
+<!-- wp:shortcode -->
+[wpf_project_posts heading_text="関連プロジェクト" taxonomy="project_domain" term="healthcare" cta_link="http://synecoculture.test/project/domain/healthcare/"]
+<!-- /wp:shortcode -->

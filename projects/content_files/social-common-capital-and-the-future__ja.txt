@@ -1,5 +1,5 @@
-<!-- wp:image {"id":9023,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2025/01/kyoto-univ-members-1024x343.jpg" alt="" class="wp-image-9023"/></figure>
+<!-- wp:image {"id":2190,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2025/10/kyoto-univ-members-1024x343.jpg" alt="" class="wp-image-2190"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -15,7 +15,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:shortcode -->
-[wpf_rich_link url="https://www.beyond2050.iac.kyoto-u.ac.jp/lp/" text="Beyond 2050 社会的共通資本研究部門" sub_text="www.beyond2050.iac.kyoto-u.ac.jp" image_url="http://synecoculture.test/wp-content/uploads/2025/10/beyond_2025_og_img.jpg" target="_blank"]
+[wpf_rich_link url="https://www.beyond2050.iac.kyoto-u.ac.jp/lp/" text="Beyond 2050 社会的共通資本研究部門" sub_text="www.beyond2050.iac.kyoto-u.ac.jp" image_url="http://synecoculture.test/wp-content/uploads/2025/10/beyond-2025.jpg" target="_blank"]
 <!-- /wp:shortcode -->
 
 <!-- wp:shortcode -->
@@ -35,7 +35,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:shortcode -->
-[wpf_rich_link url="https://note.com/sccf_ifohs/n/n94a7105eeb1f" text="京都大学 人と社会の未来研究院「社会的共通資本と未来」寄附研究部門創設記念シンポジウム Beyond Capitalism 〜拡張する社会的共通資本〜 を実施しました：2022年7月23日" image_url="http://synecoculture.test/wp-content/uploads/2025/10/rectangle_large_type_2_ee4135f4845a3fac7319abfd9b50633d.webp" target="_blank"]
+[wpf_rich_link url="https://note.com/sccf_ifohs/n/n94a7105eeb1f" text="京都大学 人と社会の未来研究院「社会的共通資本と未来」寄附研究部門創設記念シンポジウム Beyond Capitalism 〜拡張する社会的共通資本〜 を実施しました：2022年7月23日" image_url="http://synecoculture.test/wp-content/uploads/2025/10/beyond-capitalism.webp" target="_blank"]
 <!-- /wp:shortcode -->
 
 <!-- wp:paragraph -->
@@ -47,7 +47,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:shortcode -->
-[wpf_rich_link url="https://note.com/sccf_ifohs/n/n13765ebf0258" text="自然資本と地域・人間・社会をつなぐ―社会的共通資本の新たな展望イベントレポート" image_url="http://synecoculture.test/wp-content/uploads/2025/10/rectangle_large_type_2_f0fcb142935bfcfb2686136be47dd6a4.webp" target="_blank"]
+[wpf_rich_link url="https://note.com/sccf_ifohs/n/n13765ebf0258" text="自然資本と地域・人間・社会をつなぐ―社会的共通資本の新たな展望イベントレポート" image_url="http://synecoculture.test/wp-content/uploads/2025/10/shizenshihon.webp" target="_blank"]
 <!-- /wp:shortcode -->
 
 <!-- wp:paragraph -->
@@ -59,7 +59,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:shortcode -->
-[wpf_rich_link url="https://note.com/sccf_ifohs/n/nd1793e2ce96e" text="【ポッドキャストエピソードに舩橋 真俊特定教授が登場】生物多様性のビッグウェーブに備えるための拡張生態系と協生農法：Tokyo Regenerative Food Lab(#6)　『WIRED』日本版" image_url="http://synecoculture.test/wp-content/uploads/2025/10/rectangle_large_type_2_8f0ee5a52a64013baf05e2149d66944f.webp" target="_blank"]
+[wpf_rich_link url="https://note.com/sccf_ifohs/n/nd1793e2ce96e" text="【ポッドキャストエピソードに舩橋 真俊特定教授が登場】生物多様性のビッグウェーブに備えるための拡張生態系と協生農法：Tokyo Regenerative Food Lab(#6)　『WIRED』日本版" image_url="http://synecoculture.test/wp-content/uploads/2025/10/tokyo-regenerative-food-lab.webp" target="_blank"]
 <!-- /wp:shortcode -->
 
 <!-- wp:paragraph -->
@@ -79,7 +79,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:shortcode -->
-[wpf_rich_link url="https://www.beyond2050.iac.kyoto-u.ac.jp/contact/" text="京都大学・社会的共通資本研究のための基金" sub_text="payment.kikin.kyoto-u.ac.jp" image_url="http://synecoculture.test/wp-content/uploads/2025/10/kyoto-univ-ogimage.png" target="_blank"]
+[wpf_rich_link url="https://www.beyond2050.iac.kyoto-u.ac.jp/contact/" text="京都大学・社会的共通資本研究のための基金" sub_text="payment.kikin.kyoto-u.ac.jp" image_url="http://synecoculture.test/wp-content/uploads/2025/10/kyoto-univ.png" target="_blank"]
 <!-- /wp:shortcode -->
 
 <!-- wp:paragraph {"fontSize":"text-sm"} -->
