@@ -114,23 +114,33 @@ wp eval-file ./migrations/utils/create_posts.php page ja ./migrations/page_migra
 wp eval-file ./migrations/page_migrations/create-contact-form.php
 
 ###
-### ホームページのSCFを更新
+### ホームページのマイグレーション
 ###
 
 if [ "$IMPORT_MEDIA" == "--import-media" ]; then
-  ./migrations/page_migrations/scf_contents/migrations.sh --import-media
+  ./migrations/page_migrations/home/migrations.sh --import-media
 else
-  ./migrations/page_migrations/scf_contents/migrations.sh
+  ./migrations/page_migrations/home/migrations.sh
 fi
 
 ###
-### カバー画像のマイグレーション
+### 私たちについてのマイグレーション
 ###
 
 if [ "$IMPORT_MEDIA" == "--import-media" ]; then
-  ./migrations/page_migrations/cover_media/migrations.sh --import-media
+  ./migrations/page_migrations/about/migrations.sh --import-media
 else
-  ./migrations/page_migrations/cover_media/migrations.sh
+  ./migrations/page_migrations/about/migrations.sh
+fi
+
+###
+### Synecocultureマニュアルのマイグレーション
+###
+
+if [ "$IMPORT_MEDIA" == "--import-media" ]; then
+  ./migrations/page_migrations/manual/migrations.sh --import-media
+else
+  ./migrations/page_migrations/manual/migrations.sh
 fi
 
 ###

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# ./migrations/page_migrations/scf_contents/home/migrations.sh
+# ./migrations/page_migrations/home/migrations.sh
 # メディアをインポートする場合:
-# ./migrations/page_migrations/scf_contents/home/migrations.sh --import-media
+# ./migrations/page_migrations/home/migrations.sh --import-media
 
 set -a               # exportを自動で付与するモード
 source ./migrations/.env
@@ -12,7 +12,7 @@ source ./migrations/utils/message.sh
 
 IMPORT_MEDIA=$1
 
-MEDIA_PATH=/srv/www/synecoculture/migrations/page_migrations/scf_contents/home/media
+MEDIA_PATH=/srv/www/synecoculture/migrations/page_migrations/home/media
 WP_UPLOADS_DIR="http://synecoculture.test/wp-content/uploads"
 WP_NEW_UPLOADS_DATE_DIR="2025/10"  # 年月ディレクトリパスは実行する年月によって適宜修正
 
@@ -449,7 +449,6 @@ for post_id in $post_ids; do
   # 英語版
   if [ "$lang" == "en" ]; then
     wp post update $post_id --post_excerpt="Official website of Synecoculture Association, dedicated to research and promotion of augmented ecosystems. We aim to build a comprehensive cultural sphere called Synecoculture."
-    wp post meta update $post_id _wp_page_template "templates/block-template.php"
 
     wp post meta add $post_id _wpf_top__branding__tagline 'Weaving with Life.'
     wp post meta add $post_id _wpf_top__branding__body_copy "We are an organization dedicated to researching and promoting augmented ecosystems. We aim to build a comprehensive cultural sphere called Synecoculture."
@@ -585,7 +584,6 @@ for post_id in $post_ids; do
   # フランス語版
   if [ "$lang" == "fr" ]; then
     wp post update $post_id --post_excerpt="Site web officiel de Synecoculture Association, dédié à la recherche et à la promotion des écosystèmes augmentés. Nous visons à construire une sphère culturelle globale appelée Synecoculture."
-    wp post meta update $post_id _wp_page_template "templates/block-template.php"
 
     wp post meta add $post_id _wpf_top__branding__tagline 'Tisser avec la vie.'
     wp post meta add $post_id _wpf_top__branding__body_copy "Nous sommes une organisation dédiée à la recherche et à la promotion d'écosystèmes augmentés. Nous visons à construire une sphère culturelle globale appelée Synecoculture."
@@ -721,7 +719,6 @@ for post_id in $post_ids; do
   # 中国語版
   if [ "$lang" == "zh" ]; then
     wp post update $post_id --post_excerpt="Synecoculture协会官方网站，致力于扩张生态系统的研究和推广。我们旨在构建名为Synecoculture的综合文化圈。"
-    wp post meta update $post_id _wp_page_template "templates/block-template.php"
 
     wp post meta add $post_id _wpf_top__branding__tagline '与生命共织。'
     wp post meta add $post_id _wpf_top__branding__body_copy '我们是<br>致力于扩展生态系统<br>研究与推广的团体。<br>我们旨在构建<br>名为Synecoculture的<br>综合文化圈。'
