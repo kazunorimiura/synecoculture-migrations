@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# ./migrations/blog_migrations/_add_languages_provided.sh
+# ./migrations/utils/_add_languages_provided.sh
 
 # 提供言語を追加する関数
 add_languages_provided() {

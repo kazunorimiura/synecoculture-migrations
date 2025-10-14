@@ -1,3 +1,15 @@
 <!-- wp:paragraph -->
-<p>※Under preparation</p>
+<p>In contrast to the 20th century, when science and technology have developed rapidly, the 21st century will be an era that will urge the reconstruction of the relationship between humans and nature. Climate variability and the loss of biodiversity are pressing for a transformative change of human activity for our survival on Earth. The Synecoculture farming method and augmented ecosystems aim to be a means for human society to create a new sustainable civilization through the transformation of various industries, which will also shape our raison d’etre and view of nature.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The research activity of Synecoculture has started in 2010, which is expanding around the world with the help of many fellow collaborators. Through the promotion of Synecoculture, the concept of augmented ecosystems that enables the synergistic realization of essential human activities and ecosystem functions has also been formed. We established Synecoculture Association in 2018 to contribute to the sustainability of human society and global ecosystems through the research and benefit-sharing on the wide range of possibilities of augmented ecosystems.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>As of 2020, we have researchers and lecturers with backgrounds in biology, complex systems, information science, agriculture, design, curation, citizen science, who are working on various domains such as food production, education, city and living space planning, well-being, healthcare, etc. As a non-profit organization that promotes the possibilities of Synecoculture and augmented ecosystems broadly and impartially, we wish to further develop new world values through joint efforts with everyone who aspires to live in cooperation with all life on this planet.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"right"} -->
+<p class="has-text-align-right">Masatoshi Funabashi<br>Founder and President</p>
 <!-- /wp:paragraph -->

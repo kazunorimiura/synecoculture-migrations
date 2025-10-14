@@ -134,6 +134,24 @@ else
 fi
 
 ###
+### ご挨拶のマイグレーション
+###
+
+./migrations/page_migrations/message/migrations.sh
+
+###
+### 組織概要のマイグレーション
+###
+
+./migrations/page_migrations/company_profile/migrations.sh
+
+###
+### 沿革のマイグレーション
+###
+
+./migrations/page_migrations/history/migrations.sh
+
+###
 ### Synecocultureマニュアルのマイグレーション
 ###
 
