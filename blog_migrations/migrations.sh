@@ -100,24 +100,40 @@ for post_id in $post_ids; do
   fi
 
   # Visit to Africa Centre for Holistic Management (1)
-  if [ "$post_id" == 2271 ]; then
-    replace_languages_provided $post_id en
-  fi
+  target_ids=$(wp post list --post_type=blog --name="visit-to-africa-centre-for-holistic-management-1" --field=ID)
+  for target_id in $target_ids; do
+    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
+    if [ "$lang" == "ja" ]; then
+      replace_languages_provided $post_id en
+    fi
+  done
 
   # Visit to Africa Centre for Holistic Management (2)
-  if [ "$post_id" == 2273 ]; then
-    replace_languages_provided $post_id en
-  fi
+  target_ids=$(wp post list --post_type=blog --name="visit-to-africa-centre-for-holistic-management-2" --field=ID)
+  for target_id in $target_ids; do
+    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
+    if [ "$lang" == "ja" ]; then
+      replace_languages_provided $post_id en
+    fi
+  done
 
   # Visit to Africa Centre for Holistic Management (3)
-  if [ "$post_id" == 2278 ]; then
-    replace_languages_provided $post_id en
-  fi
+  target_ids=$(wp post list --post_type=blog --name="visit-to-africa-centre-for-holistic-management-3" --field=ID)
+  for target_id in $target_ids; do
+    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
+    if [ "$lang" == "ja" ]; then
+      replace_languages_provided $post_id en
+    fi
+  done
 
   # Visit to Africa Centre for Holistic Management (4)
-  if [ "$post_id" == 2280 ]; then
-    replace_languages_provided $post_id en
-  fi
+  target_ids=$(wp post list --post_type=blog --name="visit-to-africa-centre-for-holistic-management-4" --field=ID)
+  for target_id in $target_ids; do
+    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
+    if [ "$lang" == "ja" ]; then
+      replace_languages_provided $post_id en
+    fi
+  done
 
   ###
   ### 投稿をフランス語版へコピー
