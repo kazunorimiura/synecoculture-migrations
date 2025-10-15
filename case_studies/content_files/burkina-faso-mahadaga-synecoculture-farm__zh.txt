@@ -1,3 +1,7 @@
+<!-- wp:image {"id":701,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2019/03/FermeDesFemmes-1024x577.png" alt="聚集在布基纳法索马哈达加协生农园的女性们" class="wp-image-701"/><figcaption class="wp-element-caption">布基纳法索马哈达加协生农园</figcaption></figure>
+<!-- /wp:image -->
+
 <!-- wp:paragraph -->
-<p>※准备中</p>
+<p>布基纳法索马哈达加协生农园是一个约500平方米规模的小型商业农场。在因土壤退化而被废弃的土地上混种了150种可食用植物,农场不翻耕土壤,不使用肥料和农药,仅在必要时进行浇水和轻度除草管理。初次种植3个月后便可收获销售,3年间共在当地市场销售了37种作物。与该地区平均水平相比,产量提高了12倍,收益性提高了88倍。在周边地区出现荒漠化迹象的情况下,这个农场再生了丰富的生态系统,并对相邻地块产生了积极影响。</p>
 <!-- /wp:paragraph -->

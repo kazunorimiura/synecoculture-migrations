@@ -1,3 +1,7 @@
+<!-- wp:image {"id":2005,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2020/12/IMG_1186-1024x576.jpeg" alt="Landscape of Ise Chihara Synecoculture Tea Garden" class="wp-image-2005"/><figcaption class="wp-element-caption">Ise Chihara Synecoculture Tea Garden</figcaption></figure>
+<!-- /wp:image -->
+
 <!-- wp:paragraph -->
-<p>※Under preparation</p>
+<p>At a tea garden in Chiharadani, Ise City, Mie Prefecture, Sakura Shizenjuku, Co. and our association are collaborating to develop a synecoculture tea garden. By introducing a design that alternates rows of tea plants with rows of fruit trees and vegetables in a tea garden that had been almost abandoned, we aim for a gradual transition from conventional tea garden management to synecoculture-based tea garden management. The transplanted tea plants are relocated to the synecoculture farm in Oiso Town, Kanagawa Prefecture, managed by our association, where they are utilized for research data collection and exploration of craft tea production.</p>
 <!-- /wp:paragraph -->

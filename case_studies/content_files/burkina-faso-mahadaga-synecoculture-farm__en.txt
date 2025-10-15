@@ -1,3 +1,7 @@
+<!-- wp:image {"id":701,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2019/03/FermeDesFemmes-1024x577.png" alt="Women gathering at the Mahadaga Synecoculture Farm, Burkina Faso" class="wp-image-701"/><figcaption class="wp-element-caption">Mahadaga Synecoculture Farm, Burkina Faso</figcaption></figure>
+<!-- /wp:image -->
+
 <!-- wp:paragraph -->
-<p>※Under preparation</p>
+<p>The Mahadaga Synecoculture Farm in Burkina Faso is a small commercial farm covering approximately 500 square meters. On land that had been abandoned due to soil degradation, 150 species of edible plants were intercropped. The farm was managed without tilling the soil, using no fertilizers or pesticides, and with only occasional watering and light weeding as needed. Within three months of initial planting, harvesting and sales became possible, and over three years, a total of 37 crop varieties were sold at local markets. Compared to regional averages, production increased 12-fold and profitability improved 88-fold. While the surrounding area shows signs of desertification, this farm has regenerated a thriving ecosystem and positively influenced adjacent plots.</p>
 <!-- /wp:paragraph -->

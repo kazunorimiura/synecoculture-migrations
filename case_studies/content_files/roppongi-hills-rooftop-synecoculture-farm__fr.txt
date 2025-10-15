@@ -1,3 +1,7 @@
+<!-- wp:image {"id":1963,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2020/08/DSC01529-1024x680.jpeg" alt="Paysage de la Synecoculture Farm sur le toit de Roppongi Hills" class="wp-image-1963"/><figcaption class="wp-element-caption">Synecoculture Farm sur le toit de Roppongi Hills</figcaption></figure>
+<!-- /wp:image -->
+
 <!-- wp:paragraph -->
-<p>※En préparation</p>
+<p>La Synecoculture Farm sur le toit de Roppongi Hills est une ferme d'environ 40 m² créée pour vérifier le potentiel de la Synecoculture dans les espaces urbains. Une parcelle de sol avec une couche de terre végétale de 1 mètre et cinq jardinières hexagonales ont été installées sur le toit de Roppongi Hills, où plus de 187 espèces de légumes et d'herbes aromatiques, incluant les Solanacées et les Fabacées, ainsi que 24 espèces d'arbres fruitiers ont été cultivés en association. Sans labour, sans engrais, sans pesticides, avec des récoltes et des tontes minimales, un écosystème où diverses plantes coexistent a été formé, démontrant que les méthodes agricoles de la Synecoculture sont efficaces même dans des espaces urbains limités.</p>
 <!-- /wp:paragraph -->

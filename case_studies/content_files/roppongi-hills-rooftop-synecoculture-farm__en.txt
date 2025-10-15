@@ -1,3 +1,7 @@
+<!-- wp:image {"id":1963,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2020/08/DSC01529-1024x680.jpeg" alt="Roppongi Hills Rooftop Synecoculture Farm landscape" class="wp-image-1963"/><figcaption class="wp-element-caption">Roppongi Hills Rooftop Synecoculture Farm</figcaption></figure>
+<!-- /wp:image -->
+
 <!-- wp:paragraph -->
-<p>※Under preparation</p>
+<p>The Roppongi Hills Rooftop Synecoculture Farm is an approximately 40-square-meter farm established to verify the potential of Synecoculture in urban spaces. A soil section with a 1-meter topsoil layer and five hexagonal planters were installed on the rooftop of Roppongi Hills, where over 187 species of vegetables and herbs, including Solanaceae and Fabaceae, and 24 species of fruit trees were intercropped. Through no-tillage, no-fertilizer, no-pesticide practices, along with minimal harvesting and mowing, an ecosystem where diverse plants coexist was formed, demonstrating that Synecoculture farming methods are effective even in limited urban spaces.</p>
 <!-- /wp:paragraph -->

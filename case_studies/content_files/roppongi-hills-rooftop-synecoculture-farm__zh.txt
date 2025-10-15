@@ -1,3 +1,7 @@
+<!-- wp:image {"id":1963,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2020/08/DSC01529-1024x680.jpeg" alt="六本木Hills屋顶协生农园景观" class="wp-image-1963"/><figcaption class="wp-element-caption">六本木Hills屋顶协生农园</figcaption></figure>
+<!-- /wp:image -->
+
 <!-- wp:paragraph -->
-<p>※准备中</p>
+<p>六本木Hills屋顶协生农园是一个约40平方米的农园,旨在验证Synecoculture在城市空间中的可能性。在六本木Hills的屋顶上设置了具有1米客土层的土壤区域和5个六角形花盆,混种了包括茄科和豆科在内的187种以上蔬菜和香草类植物,以及24种果树。通过不耕作、不施肥、不使用农药,同时进行少量收获和割草,形成了多样化植物共存的生态系统,证明了即使在城市这样有限的空间中,Synecoculture农法也是有效的。</p>
 <!-- /wp:paragraph -->

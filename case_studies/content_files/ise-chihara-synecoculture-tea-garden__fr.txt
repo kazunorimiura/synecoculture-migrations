@@ -1,3 +1,7 @@
+<!-- wp:image {"id":2005,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2020/12/IMG_1186-1024x576.jpeg" alt="Paysage du jardin de thé Synecoculture d'Ise Chihara" class="wp-image-2005"/><figcaption class="wp-element-caption">Jardin de thé Synecoculture d'Ise Chihara</figcaption></figure>
+<!-- /wp:image -->
+
 <!-- wp:paragraph -->
-<p>※En préparation</p>
+<p>Dans un jardin de thé situé à Chiharadani, ville d'Ise, préfecture de Mie, K.K Sakura Shizenjuku. et notre association collaborent pour développer un jardin de thé en synecoculture. En introduisant un design qui alterne des rangées de théiers avec des rangées d'arbres fruitiers et de légumes dans un jardin de thé qui avait été presque abandonné, nous visons une transition progressive de la gestion conventionnelle du jardin de thé vers une gestion basée sur la synecoculture. Les théiers transplantés sont relocalisés vers la ferme en synecoculture de la ville d'Oiso, préfecture de Kanagawa, gérée par notre association, où ils sont utilisés pour la collecte de données de recherche et l'exploration de la production de thé artisanal.</p>
 <!-- /wp:paragraph -->
