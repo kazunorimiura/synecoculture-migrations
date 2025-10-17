@@ -80,17 +80,13 @@ wp eval-file ./migrations/polylang/update-string-translation.php
 ### メディアのインポート
 ###
 
-# wp import migrations/inc/media.xml --authors=skip --skip=image_resize
 wp import migrations/blog/media.xml --authors=skip --skip=image_resize
-# wp eval-file ./migrations/create-attachments-from-files.php
-# ./migrations/media.sh
 
 ###
 ### taxのインポート
 ###
 
-# wp import migrations/inc/all-contents-edited.xml --authors=skip --skip=attachment,image_resize
-wp import migrations/blog/all-contents-edited.xml --authors=skip --skip=attachment,image_resize
+wp import migrations/blog/all-contents.xml --authors=skip --skip=attachment,image_resize
 
 
 ###
@@ -98,13 +94,6 @@ wp import migrations/blog/all-contents-edited.xml --authors=skip --skip=attachme
 ###
 
 wp import migrations/blog/posts-edited.xml --authors=skip --skip=attachment,image_resize
-
-# # ###
-# # ### 固定ページのインポート
-# # ###
-
-# # # NOTE: 古い固定ページはどれも使わなそうなのでインポートしないことにした
-# # # wp import migrations/inc/pages.xml --authors=skip --skip=image_resize
 
 ###
 ### URLリネーム
@@ -116,8 +105,8 @@ wp import migrations/blog/posts-edited.xml --authors=skip --skip=attachment,imag
 ### タームを作成
 ###
 
-./migrations/utils/create_terms.sh migrations/_category_terms.csv category
-./migrations/utils/create_terms.sh migrations/_post_tag_terms.csv post_tag
+./migrations/utils/add_terms.sh migrations/_category_terms.csv category
+./migrations/utils/add_terms.sh migrations/_post_tag_terms.csv post_tag
 ./migrations/utils/create_terms.sh migrations/_member_cat_terms.csv member_cat
 ./migrations/utils/create_terms.sh migrations/_project_cat_terms.csv project_cat
 ./migrations/utils/create_terms.sh migrations/_project_domain_terms.csv project_domain
