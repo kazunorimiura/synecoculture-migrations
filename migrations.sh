@@ -81,26 +81,9 @@ wp eval-file ./migrations/polylang/update-string-translation.php
 ###
 
 # wp import migrations/inc/media.xml --authors=skip --skip=image_resize
-# wp import migrations/blog/media.xml --authors=skip --skip=image_resize
-wp eval-file ./migrations/create-attachments-from-files.php
-
-###
-### メディアのサイズバリエーションを再生成（未生成のもののみ対象）
-###
-
-./migrations/_regenerate_media.sh
-
-###
-### 新しい画像サイズバリエーションを設定
-###
-
-./migrations/update_img_sizes/after.sh
-
-###
-### 新しいコンテンツで使う画像をアップロード
-###
-
-./migrations/upload_new_image/migrations.sh
+wp import migrations/blog/media.xml --authors=skip --skip=image_resize
+# wp eval-file ./migrations/create-attachments-from-files.php
+# ./migrations/media.sh
 
 ###
 ### taxのインポート
@@ -116,12 +99,12 @@ wp import migrations/blog/all-contents-edited.xml --authors=skip --skip=attachme
 
 wp import migrations/blog/posts-edited.xml --authors=skip --skip=attachment,image_resize
 
-# ###
-# ### 固定ページのインポート
-# ###
+# # ###
+# # ### 固定ページのインポート
+# # ###
 
-# # NOTE: 古い固定ページはどれも使わなそうなのでインポートしないことにした
-# # wp import migrations/inc/pages.xml --authors=skip --skip=image_resize
+# # # NOTE: 古い固定ページはどれも使わなそうなのでインポートしないことにした
+# # # wp import migrations/inc/pages.xml --authors=skip --skip=image_resize
 
 ###
 ### URLリネーム
@@ -138,6 +121,7 @@ wp import migrations/blog/posts-edited.xml --authors=skip --skip=attachment,imag
 ./migrations/utils/create_terms.sh migrations/_member_cat_terms.csv member_cat
 ./migrations/utils/create_terms.sh migrations/_project_cat_terms.csv project_cat
 ./migrations/utils/create_terms.sh migrations/_project_domain_terms.csv project_domain
+./migrations/utils/create_terms.sh migrations/_area_terms.csv area
 
 ###
 ### ブログマイグレーション
@@ -145,6 +129,12 @@ wp import migrations/blog/posts-edited.xml --authors=skip --skip=attachment,imag
 ###
 
 ./migrations/blog_migrations/migrations.sh
+
+###
+### 新しいコンテンツで使う画像をアップロード
+###
+
+./migrations/upload_new_image/migrations.sh
 
 ###
 ### メンバー作成、マイグレーション
@@ -231,6 +221,18 @@ wp plugin deactivate users-customers-import-export-for-wp-woocommerce
 ###
 
 ./migrations/polylang/fix_polylang_counts.sh
+
+###
+### 未生成の画像サイズバリエーションを生成
+###
+
+./migrations/_regenerate_media.sh
+
+###
+### 新しい画像サイズバリエーションを設定
+###
+
+./migrations/update_img_sizes/after.sh
 
 
 echo "処理時間 (migrations/migrations.sh): ${SECONDS}秒"

@@ -14,61 +14,39 @@ category_sponsorship=$(wp eval "echo get_term_by('slug', 'sponsorship-opportunit
 post_type="blog"
 post_ids=$(wp post list --post_type="$post_type" --field=ID)
 for post_id in $post_ids; do
-  message "$post_id" bold
+  post_title=$(wp post get $post_id --field=post_title)
+  message "$post_id, $post_title" bold
 
-  # 一旦この投稿の提供言語をクリア
-  replace_languages_provided $post_id ""
+  ###
+  ### xmlインポート時点では日本語の記事がほとんどだが、中には英語のみ提供の投稿もあるため、適宜ふさわしい言語版に振り分ける
+  ###
 
+  # 一旦、この投稿の提供言語を日本語のみにする
   replace_languages_provided $post_id ja
 
   ###
-  ### ニュース投稿へ移植
+  ### ニュースに移植し、カテゴリを設定
   ###
 
-  # 【インタビュー記事掲載】未来の食を考えるウェブメディア「What To Eat ?」
-  target_ids=$(wp post list --post_type=blog --name="post-3442" --field=ID)
-  for target_id in $target_ids; do
-    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
-    if [ "$lang" == "ja" ]; then
-      wp post update $target_id --post_type="post" --post_category=$category_media
-    fi
-  done
+  if [ "$post_title" == "【インタビュー記事掲載】未来の食を考えるウェブメディア「What To Eat ?」" ]; then
+    wp post update $post_id --post_type="post" --post_category=$category_media
+  fi
 
-  # ラジオ出演のお知らせ
-  target_ids=$(wp post list --post_type=blog --name="post-67" --field=ID)
-  for target_id in $target_ids; do
-    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
-    if [ "$lang" == "ja" ]; then
-      wp post update $target_id --post_type="post" --post_category=$category_media
-    fi
-  done
+  if [ "$post_title" == "ラジオ出演のお知らせ" ]; then
+    wp post update $post_id --post_type="post" --post_category=$category_media
+  fi
 
-  # 寄付金使用報告：2020年
-  target_ids=$(wp post list --post_type=blog --name="post-3098" --field=ID)
-  for target_id in $target_ids; do
-    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
-    if [ "$lang" == "ja" ]; then
-      wp post update $target_id --post_type="post" --post_category=$category_donate
-    fi
-  done
+  if [ "$post_title" == "寄付金使用報告：2020年" ]; then
+    wp post update $post_id --post_type="post" --post_category=$category_donate
+  fi
 
-  # 寄附金使用報告：2021年
-  target_ids=$(wp post list --post_type=blog --name="post-3302" --field=ID)
-  for target_id in $target_ids; do
-    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
-    if [ "$lang" == "ja" ]; then
-      wp post update $target_id --post_type="post" --post_category=$category_donate
-    fi
-  done
+  if [ "$post_title" == "寄附金使用報告：2021年" ]; then
+    wp post update $post_id --post_type="post" --post_category=$category_donate
+  fi
 
-  # シネコカルチャー研究航海 プロダクトスポンサー募集のお知らせ
-  target_ids=$(wp post list --post_type=blog --name="post-92" --field=ID)
-  for target_id in $target_ids; do
-    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
-    if [ "$lang" == "ja" ]; then
-      wp post update $target_id --post_type="post" --post_category=$category_sponsorship
-    fi
-  done
+  if [ "$post_title" == "シネコカルチャー研究航海 プロダクトスポンサー募集のお知らせ" ]; then
+    wp post update $post_id --post_type="post" --post_category=$category_sponsorship
+  fi
 
   ###
   ### 投稿を英語版へコピー
@@ -85,55 +63,39 @@ for post_id in $post_ids; do
   ### 英語版コンテンツのマイグレーション
   ###
 
-  # ソニーの「社会課題と技術」特集に対談掲載
+  # "ソニーの「社会課題と技術」特集に対談掲載"の英訳と思われる投稿を英語版に紐づける
   set_tr_post $post_id $tr_post_id 2707 "interview-featured-in-sonys-social-issues-and-technologies-special-edition" en blog
 
-  # 協生農法・拡張生態系に関わる人々の越境と社会普及のためのフレームワークについて
+  # "協生農法・拡張生態系に関わる人々の越境と社会普及のためのフレームワークについて"の英訳と思われる投稿を英語版に紐づける
   set_tr_post $post_id $tr_post_id 3364 "a-framework-for-collaboration-across-borders-and-sharing-with-society" en blog
 
-  # 表土とウイルス
+  # "表土とウイルス"の英訳と思われる投稿を英語版に紐づける
   set_tr_post $post_id $tr_post_id 2640 "topsoil-and-viruses" en blog
 
-  # Presentation at 7th International Conference on Biodiversity Conservation and Ecosystem Management in Melbourne, Australia
-  if [ "$post_id" == 702 ]; then
+  # "Presentation at 7th International Conference on Biodiversity Conservation and Ecosystem Management in Melbourne, Australia"は英語版のみの提供とする
+  if [ "$post_title" == "Presentation at 7th International Conference on Biodiversity Conservation and Ecosystem Management in Melbourne, Australia" ]; then
     replace_languages_provided $post_id en
   fi
 
-  # Visit to Africa Centre for Holistic Management (1)
-  target_ids=$(wp post list --post_type=blog --name="visit-to-africa-centre-for-holistic-management-1" --field=ID)
-  for target_id in $target_ids; do
-    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
-    if [ "$lang" == "ja" ]; then
-      replace_languages_provided $post_id en
-    fi
-  done
+  # "Visit to Africa Centre for Holistic Management (1)"は英語版のみの提供とする
+  if [ "$post_title" == "Visit to Africa Centre for Holistic Management (1)" ]; then
+    replace_languages_provided $post_id en
+  fi
 
-  # Visit to Africa Centre for Holistic Management (2)
-  target_ids=$(wp post list --post_type=blog --name="visit-to-africa-centre-for-holistic-management-2" --field=ID)
-  for target_id in $target_ids; do
-    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
-    if [ "$lang" == "ja" ]; then
-      replace_languages_provided $post_id en
-    fi
-  done
+  # "Visit to Africa Centre for Holistic Management (2)"は英語版のみの提供とする
+  if [ "$post_title" == "Visit to Africa Centre for Holistic Management (2)" ]; then
+    replace_languages_provided $post_id en
+  fi
 
-  # Visit to Africa Centre for Holistic Management (3)
-  target_ids=$(wp post list --post_type=blog --name="visit-to-africa-centre-for-holistic-management-3" --field=ID)
-  for target_id in $target_ids; do
-    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
-    if [ "$lang" == "ja" ]; then
-      replace_languages_provided $post_id en
-    fi
-  done
+  # "Visit to Africa Centre for Holistic Management (3)"は英語版のみの提供とする
+  if [ "$post_title" == "Visit to Africa Centre for Holistic Management (3)" ]; then
+    replace_languages_provided $post_id en
+  fi
 
-  # Visit to Africa Centre for Holistic Management (4)
-  target_ids=$(wp post list --post_type=blog --name="visit-to-africa-centre-for-holistic-management-4" --field=ID)
-  for target_id in $target_ids; do
-    lang=$(wp eval "echo pll_get_post_language('$target_id', 'slug');")
-    if [ "$lang" == "ja" ]; then
-      replace_languages_provided $post_id en
-    fi
-  done
+  # "Visit to Africa Centre for Holistic Management (4)"は英語版のみの提供とする
+  if [ "$post_title" == "Visit to Africa Centre for Holistic Management (4)" ]; then
+    replace_languages_provided $post_id en
+  fi
 
   ###
   ### 投稿をフランス語版へコピー
@@ -146,7 +108,7 @@ for post_id in $post_ids; do
     message "Failed to create fr post" error
   fi
 
-  # 表土とウイルス
+  # "表土とウイルス"のフランス語訳と思われる投稿をフランス語版に紐づける
   set_tr_post $post_id $tr_post_id 2640 "terre-arable-et-virus" fr blog
 
   ###
@@ -160,9 +122,9 @@ for post_id in $post_ids; do
     message "Failed to create zh post" error
   fi
 
-  # 表土とウイルス
+  # "表土とウイルス"の中国語訳と思われる投稿を中国語版に紐づける
   set_tr_post $post_id $tr_post_id 2640 "post-2695" zh blog
 
-  # 論文「人間による生態系の拡張：食料生産と科学の2045年目標」邦訳
+  # "論文「人間による生態系の拡張：食料生産と科学の2045年目標」邦訳"の中国語訳と思われる投稿を中国語版に紐づける
   set_tr_post $post_id $tr_post_id 781 "post-817" zh blog
 done

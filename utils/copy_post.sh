@@ -11,8 +11,7 @@ copy_post() {
   local lang=$2
 
   # 投稿をコピーして tr_post_id を取得
-  # clean_languages_cacheは、翻訳の投稿数を正確に記録するために必要
-  tr_post_id=$(wp eval "echo PLL()->sync_post->sync_model->copy( $post_id, '$lang', 'copy', false );")
+  tr_post_id=$(wp eval "echo PLL()->sync_post->sync_model->copy( $post_id, '$lang', 'copy', false ); PLL()->model->clean_languages_cache();")
 
   # 戻り値として tr_post_id を返す
   echo "$tr_post_id"
