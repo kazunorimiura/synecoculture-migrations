@@ -1,7 +1,7 @@
 <!-- wp:image {"id":2005,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2020/12/IMG_1186-1024x576.jpeg" alt="伊势茅原协生茶园景观" class="wp-image-2005"/><figcaption class="wp-element-caption">伊势茅原协生茶园</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2020/12/IMG_1186-1024x576.jpeg" alt="伊勢・茅原協生茶園の風景" class="wp-image-2005"/><figcaption class="wp-element-caption">伊勢・茅原協生茶園</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>在三重县伊势市茅原谷的茶园中,株式会社樱自然塾与本协会合作开展协生茶园的建设工作。通过在几乎废弃的茶园中引入茶树垄与果树、蔬菜垄交替配置的设计,我们致力于从传统茶园管理逐步过渡到基于Synecoculture的茶园管理。移植的茶树被转移到本协会管理的神奈川县大矶町协生农园,用于研究数据收集和手工茶制作的探索。</p>
+<p>三重県伊勢市茅原谷にある茶園で、株式会社桜自然塾と当社団が協力して協生茶園の造成に取り組んでいます。ほぼ耕作放棄されていた茶園に、チャノキの畝と果樹・野菜の畝を交互に配置するデザインを導入し、従来の茶園管理からシネコカルチャーによる茶園管理への段階的な移行を目指しています。移植されたチャノキは、当社団が管理する神奈川県大磯町の協生農園へと移され、研究データ収集とクラフトティー製作の探究に活用しています。</p>
 <!-- /wp:paragraph -->

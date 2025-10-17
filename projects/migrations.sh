@@ -12,6 +12,7 @@ source ./migrations/utils/message.sh
 source ./migrations/utils/import_media.sh
 source ./migrations/utils/cleanup_posts.sh
 source ./migrations/utils/member_ids.sh
+source ./migrations/utils/replace_languages_provided.sh
 
 IMPORT_MEDIA=$1
 
@@ -41,6 +42,8 @@ for post_id in $post_ids; do
   fi
 
   post_slug=$(wp post get $post_id --field=post_name)
+
+  replace_languages_provided $post_id ja
 
   # 第11回国際高齢化とeヘルスのための情報通信技術会議
   if [ "$post_slug" == "ict4awe-2025" ]; then

@@ -1,3 +1,0 @@
-<!-- wp:paragraph -->
-<p>※准备中</p>
-<!-- /wp:paragraph -->

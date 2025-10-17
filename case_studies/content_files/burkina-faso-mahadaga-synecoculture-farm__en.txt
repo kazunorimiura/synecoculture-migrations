@@ -1,7 +1,7 @@
 <!-- wp:image {"id":701,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2019/03/FermeDesFemmes-1024x577.png" alt="Women gathering at the Mahadaga Synecoculture Farm, Burkina Faso" class="wp-image-701"/><figcaption class="wp-element-caption">Mahadaga Synecoculture Farm, Burkina Faso</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2019/03/FermeDesFemmes-1024x577.png" alt="ブルキナファソ・マハダガ協生農園に集まる女性たち" class="wp-image-701"/><figcaption class="wp-element-caption">ブルキナファソ・マハダガ協生農園</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>The Mahadaga Synecoculture Farm in Burkina Faso is a small commercial farm covering approximately 500 square meters. On land that had been abandoned due to soil degradation, 150 species of edible plants were intercropped. The farm was managed without tilling the soil, using no fertilizers or pesticides, and with only occasional watering and light weeding as needed. Within three months of initial planting, harvesting and sales became possible, and over three years, a total of 37 crop varieties were sold at local markets. Compared to regional averages, production increased 12-fold and profitability improved 88-fold. While the surrounding area shows signs of desertification, this farm has regenerated a thriving ecosystem and positively influenced adjacent plots.</p>
+<p>ブルキナファソ・マハダガ協生農園は、約500㎡規模の小さな商業農場です。土壌劣化により放棄されていた土地に150種の食用植物を混植し、畑は耕さず、肥料や農薬も使わず、必要に応じて水やりと軽い草刈りを行う程度で管理しました。初期植栽から3ヶ月後には収穫・販売ができるようになり、3年間で合計37種類の作物を地元市場で販売しました。同地域の平均と比較して、生産量は12倍、収益性は88倍に向上しています。周辺地域が砂漠化の兆候を示す中で、この農場が豊かな生態系を再生し、隣接する区画にもポジティブな影響を与えています。</p>
 <!-- /wp:paragraph -->

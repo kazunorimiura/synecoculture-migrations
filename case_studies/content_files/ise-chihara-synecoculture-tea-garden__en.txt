@@ -1,7 +1,7 @@
 <!-- wp:image {"id":2005,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2020/12/IMG_1186-1024x576.jpeg" alt="Landscape of Ise Chihara Synecoculture Tea Garden" class="wp-image-2005"/><figcaption class="wp-element-caption">Ise Chihara Synecoculture Tea Garden</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2020/12/IMG_1186-1024x576.jpeg" alt="伊勢・茅原協生茶園の風景" class="wp-image-2005"/><figcaption class="wp-element-caption">伊勢・茅原協生茶園</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>At a tea garden in Chiharadani, Ise City, Mie Prefecture, Sakura Shizenjuku, Co. and our association are collaborating to develop a synecoculture tea garden. By introducing a design that alternates rows of tea plants with rows of fruit trees and vegetables in a tea garden that had been almost abandoned, we aim for a gradual transition from conventional tea garden management to synecoculture-based tea garden management. The transplanted tea plants are relocated to the synecoculture farm in Oiso Town, Kanagawa Prefecture, managed by our association, where they are utilized for research data collection and exploration of craft tea production.</p>
+<p>三重県伊勢市茅原谷にある茶園で、株式会社桜自然塾と当社団が協力して協生茶園の造成に取り組んでいます。ほぼ耕作放棄されていた茶園に、チャノキの畝と果樹・野菜の畝を交互に配置するデザインを導入し、従来の茶園管理からシネコカルチャーによる茶園管理への段階的な移行を目指しています。移植されたチャノキは、当社団が管理する神奈川県大磯町の協生農園へと移され、研究データ収集とクラフトティー製作の探究に活用しています。</p>
 <!-- /wp:paragraph -->

@@ -155,11 +155,11 @@ fi
 ### Synecocultureマニュアルのマイグレーション
 ###
 
-if [ "$IMPORT_MEDIA" == "--import-media" ]; then
-  ./migrations/page_migrations/manual/migrations.sh --import-media
-else
-  ./migrations/page_migrations/manual/migrations.sh
-fi
+# if [ "$IMPORT_MEDIA" == "--import-media" ]; then
+#   ./migrations/page_migrations/manual/migrations.sh --import-media
+# else
+#   ./migrations/page_migrations/manual/migrations.sh
+# fi
 
 ###
 ### ホームページの表示設定を更新

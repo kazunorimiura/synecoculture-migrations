@@ -1,7 +1,7 @@
 <!-- wp:image {"id":1963,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2020/08/DSC01529-1024x680.jpeg" alt="Roppongi Hills Rooftop Synecoculture Farm landscape" class="wp-image-1963"/><figcaption class="wp-element-caption">Roppongi Hills Rooftop Synecoculture Farm</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2020/08/DSC01529-1024x680.jpeg" alt="六本木ヒルズ屋上・協生農園の風景" class="wp-image-1963"/><figcaption class="wp-element-caption">六本木ヒルズ屋上・協生農園</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>The Roppongi Hills Rooftop Synecoculture Farm is an approximately 40-square-meter farm established to verify the potential of Synecoculture in urban spaces. A soil section with a 1-meter topsoil layer and five hexagonal planters were installed on the rooftop of Roppongi Hills, where over 187 species of vegetables and herbs, including Solanaceae and Fabaceae, and 24 species of fruit trees were intercropped. Through no-tillage, no-fertilizer, no-pesticide practices, along with minimal harvesting and mowing, an ecosystem where diverse plants coexist was formed, demonstrating that Synecoculture farming methods are effective even in limited urban spaces.</p>
+<p>六本木ヒルズ屋上・協生農園は、都市空間におけるシネコカルチャーの可能性を検証するために立ち上げられた約40㎡の農園です。六本木ヒルズの屋上に1mの客土層をもつ土壌区画と六角形プランター5基を設置し、ナス科やマメ科を含む野菜・ハーブ類187種以上と果樹24種を混植しました。無耕起、無肥料、無農薬、少量の収穫や草刈りを行いつつ、多様な植物が共存する生態系を形成し、都市という限られた空間でもSynecocultureによる農法が有効であることがわかりました。</p>
 <!-- /wp:paragraph -->

@@ -1,7 +1,7 @@
 <!-- wp:image {"id":1963,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2020/08/DSC01529-1024x680.jpeg" alt="六本木Hills屋顶协生农园景观" class="wp-image-1963"/><figcaption class="wp-element-caption">六本木Hills屋顶协生农园</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2020/08/DSC01529-1024x680.jpeg" alt="六本木ヒルズ屋上・協生農園の風景" class="wp-image-1963"/><figcaption class="wp-element-caption">六本木ヒルズ屋上・協生農園</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>六本木Hills屋顶协生农园是一个约40平方米的农园,旨在验证Synecoculture在城市空间中的可能性。在六本木Hills的屋顶上设置了具有1米客土层的土壤区域和5个六角形花盆,混种了包括茄科和豆科在内的187种以上蔬菜和香草类植物,以及24种果树。通过不耕作、不施肥、不使用农药,同时进行少量收获和割草,形成了多样化植物共存的生态系统,证明了即使在城市这样有限的空间中,Synecoculture农法也是有效的。</p>
+<p>六本木ヒルズ屋上・協生農園は、都市空間におけるシネコカルチャーの可能性を検証するために立ち上げられた約40㎡の農園です。六本木ヒルズの屋上に1mの客土層をもつ土壌区画と六角形プランター5基を設置し、ナス科やマメ科を含む野菜・ハーブ類187種以上と果樹24種を混植しました。無耕起、無肥料、無農薬、少量の収穫や草刈りを行いつつ、多様な植物が共存する生態系を形成し、都市という限られた空間でもSynecocultureによる農法が有効であることがわかりました。</p>
 <!-- /wp:paragraph -->
