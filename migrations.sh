@@ -95,6 +95,14 @@ wp import migrations/blog/all-contents.xml --authors=skip --skip=attachment,imag
 
 wp import migrations/blog/posts-edited.xml --authors=skip --skip=attachment,image_resize
 
+
+###
+### サフィックス付きメディアファイルを正としてDBリネーム
+###
+
+./migrations/fix_media_suffix/migrations.sh
+
+
 ###
 ### URLリネーム
 ###

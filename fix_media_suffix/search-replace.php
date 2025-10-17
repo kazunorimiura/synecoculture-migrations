@@ -3,13 +3,13 @@
  * CSVファイルを読み込み、wp search-replaceコマンドを実行するスクリプト
  *
  * 使用方法:
- * wp eval-file ./migrations/fix_media_suffix/search-replace.php /path/to/file.csv [--dry-run]
- * wp eval-file ./migrations/fix_media_suffix/search-replace.php ./migrations/fix_media_suffix/wp_suffix_report.csv --dry-run
+ * wp eval-file ./migrations/fix_media_suffix/search-replace.php /path/to/file.csv
+ * wp eval-file ./migrations/fix_media_suffix/search-replace.php ./migrations/fix_media_suffix/wp_suffix_report.csv
  */
 
 // 引数からCSVファイルのパスとオプションを取得
 $csv_file = $args[0] ?? null;
-$dry_run = in_array('--dry-run', $args);
+$dry_run = false;
 
 if (empty($csv_file)) {
     WP_CLI::error('CSVファイルのパスを引数で指定してください。');
@@ -60,7 +60,7 @@ while (($row = fgetcsv($handle)) !== false) {
 
     // 元のファイル存在が"Yes"の場合のみ処理
     if (strcasecmp($file_exists, 'Yes') !== 0) {
-        WP_CLI::log("行 {$total_count}: 元のファイルが存在しないためスキップ - {$old_file}");
+        // WP_CLI::log("行 {$total_count}: 元のファイルが存在しないためスキップ - {$old_file}");
         $skipped_count++;
         continue;
     }
