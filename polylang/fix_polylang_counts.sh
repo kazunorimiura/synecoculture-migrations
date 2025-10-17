@@ -59,15 +59,6 @@ GROUP BY t.name, tt.term_taxonomy_id
 ORDER BY t.name;
 " --skip-column-names
 
-# 確認プロンプト
-echo ""
-read -p "投稿数を修正しますか？ (y/N): " -n 1 -r
-echo
-if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-    print_info "処理をキャンセルしました"
-    exit 0
-fi
-
 # 投稿数修正実行
 print_info "投稿数を修正中..."
 
