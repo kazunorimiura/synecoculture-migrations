@@ -194,6 +194,16 @@ else
 fi
 
 ###
+### サイトアイコンを設定
+###
+
+if [ "$IMPORT_MEDIA" == "--import-media" ]; then
+  ./migrations/theme_mod/site_icon/migrations.sh --import-media
+else
+  ./migrations/theme_mod/site_icon/migrations.sh
+fi
+
+###
 ### メニューマイグレーション
 ###
 
