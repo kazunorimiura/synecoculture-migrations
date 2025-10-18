@@ -7,5 +7,5 @@
 <!-- /wp:shortcode -->
 
 <!-- wp:shortcode -->
-[wpf_news_blog_posts heading_text="最新情報" taxonomy="post_tag" term="syneco-portal" cta_link="http://synecoculture.test/news/tag/syneco-portal/"]
+[wpf_news_blog_posts heading_text="最新情報" post_tag="syneco-portal" blog_tag="syneco-portal"]
 <!-- /wp:shortcode -->
