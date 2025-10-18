@@ -139,6 +139,10 @@ for post_id in $post_ids; do
   fi
 
   if [ "$lang" == "en" ]; then
+    wp post meta update $post_id _thumbnail_id $thumbnail_id__en
+    wp post term add $post_id area africa-burkina-faso
+    replace_languages_provided $post_id ja
+
     wp post meta add $post_id _wpf_case_study__basic__heading "実践者名"
     wp post meta add $post_id _wpf_case_study__basic__body "AFIDRA、CARFS、André Tindano"
 
@@ -191,6 +195,10 @@ for post_id in $post_ids; do
   fi
 
   if [ "$lang" == "fr" ]; then
+    wp post meta update $post_id _thumbnail_id $thumbnail_id__fr
+    wp post term add $post_id area africa-burkina-faso
+    replace_languages_provided $post_id ja
+
     wp post meta add $post_id _wpf_case_study__basic__heading "実践者名"
     wp post meta add $post_id _wpf_case_study__basic__body "AFIDRA、CARFS、André Tindano"
 
@@ -243,6 +251,10 @@ for post_id in $post_ids; do
   fi
 
   if [ "$lang" == "zh" ]; then
+    wp post meta update $post_id _thumbnail_id $thumbnail_id__zh
+    wp post term add $post_id area africa-burkina-faso
+    replace_languages_provided $post_id ja
+
     wp post meta add $post_id _wpf_case_study__basic__heading "実践者名"
     wp post meta add $post_id _wpf_case_study__basic__body "AFIDRA、CARFS、André Tindano"
 
