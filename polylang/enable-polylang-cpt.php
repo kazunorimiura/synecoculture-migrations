@@ -9,7 +9,7 @@ $opt = PLL()->options;
 
 // 対象（存在チェックも行う）
 $want_post_types = ['blog', 'project', 'case-study', 'member', 'glossary', 'career',];
-$want_taxonomies = ['project_cat', 'project_domain', 'project_tag', 'area', 'case_study_tag', 'member_cat', 'member_tag', 'glossary_tag', 'career_cat', 'career_tag'];
+$want_taxonomies = ['blog_cat', 'blog_tag', 'project_cat', 'project_domain', 'project_tag', 'area', 'case_study_tag', 'member_cat', 'member_tag', 'glossary_tag', 'career_cat', 'career_tag'];
 
 // 存在チェック（警告表示のみ。見つかったものだけ反映）
 $valid_pts = [];

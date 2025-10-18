@@ -86,7 +86,7 @@ wp import migrations/blog/media.xml --authors=skip --skip=image_resize
 ### taxのインポート
 ###
 
-wp import migrations/blog/all-contents.xml --authors=skip --skip=attachment,image_resize
+wp import migrations/blog/all-contents-edited.xml --authors=skip --skip=attachment,image_resize
 
 
 ###
@@ -113,8 +113,8 @@ wp import migrations/blog/posts-edited.xml --authors=skip --skip=attachment,imag
 ### タームを作成
 ###
 
-./migrations/utils/add_terms.sh migrations/_category_terms.csv category
-./migrations/utils/add_terms.sh migrations/_post_tag_terms.csv post_tag
+./migrations/utils/create_terms.sh migrations/_category_terms.csv category
+./migrations/utils/create_terms.sh migrations/_post_tag_terms.csv post_tag
 ./migrations/utils/create_terms.sh migrations/_member_cat_terms.csv member_cat
 ./migrations/utils/create_terms.sh migrations/_project_cat_terms.csv project_cat
 ./migrations/utils/create_terms.sh migrations/_project_domain_terms.csv project_domain
