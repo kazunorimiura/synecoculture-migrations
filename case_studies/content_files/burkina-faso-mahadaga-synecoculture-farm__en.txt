@@ -1,4 +1,4 @@
-<!-- wp:image {"id":701,"sizeSlug":"large","linkDestination":"none"} -->
+<!-- wp:image {"id":7908,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2019/03/FermeDesFemmes-1024x577.png" alt="ブルキナファソ・マハダガ協生農園に集まる女性たち" class="wp-image-701"/><figcaption class="wp-element-caption">ブルキナファソ・マハダガ協生農園</figcaption></figure>
 <!-- /wp:image -->
 

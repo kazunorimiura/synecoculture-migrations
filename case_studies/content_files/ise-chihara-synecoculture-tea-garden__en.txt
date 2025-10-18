@@ -1,4 +1,4 @@
-<!-- wp:image {"id":2005,"sizeSlug":"large","linkDestination":"none"} -->
+<!-- wp:image {"id":3864,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2020/12/IMG_1186-1024x576.jpeg" alt="伊勢・茅原協生茶園の風景" class="wp-image-2005"/><figcaption class="wp-element-caption">伊勢・茅原協生茶園</figcaption></figure>
 <!-- /wp:image -->
 
