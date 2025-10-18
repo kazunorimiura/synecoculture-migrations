@@ -56,7 +56,10 @@ while (($row = fgetcsv($handle)) !== false) {
 
     $new_file = trim($row[0]);
     $old_file = trim($row[1]);
+	$new_filename = $filename = pathinfo($new_file, PATHINFO_FILENAME);
+	$old_filename = $filename = pathinfo($old_file, PATHINFO_FILENAME);
     $file_exists = trim($row[2]);
+	$attach_id = attachment_url_to_postid( 'http://synecoculture.test/wp-content/uploads/' . $new_file );
 
     // 元のファイル存在が"Yes"の場合のみ処理
     if (strcasecmp($file_exists, 'Yes') !== 0) {
@@ -74,26 +77,45 @@ while (($row = fgetcsv($handle)) !== false) {
 
     WP_CLI::log("行 {$total_count}: 置換を実行 - '{$old_file}' → '{$new_file}'");
 
-    try {
-        // wp search-replaceコマンドを実行（guidをスキップ）
-        $command = sprintf(
-            'search-replace %s %s --skip-columns=guid%s',
-            escapeshellarg($old_file),
-            escapeshellarg($new_file),
-            $dry_run ? ' --dry-run' : ''
-        );
-
-        WP_CLI::runcommand($command, array(
-            'launch' => false,
-            'exit_error' => false,
-            'return' => false
-        ));
-
-        $processed_count++;
-
-    } catch (Exception $e) {
-        WP_CLI::warning("行 {$total_count}: エラーが発生しました - " . $e->getMessage());
+	if (!$attach_id) {
+		WP_CLI::warning("画像IDが無効です");
+        continue;
     }
+
+	$metadata = wp_get_attachment_metadata($attach_id);
+
+	if (empty($metadata)) {
+		WP_CLI::warning("メタデータを取得しましたが、中身が空でした");
+        continue;
+    }
+
+	// 置換が必要なすべてのサイズバリエーションのファイル名を収集
+	$replaced_files = collectAndReplaceFiles($metadata, $old_filename, $new_filename);
+
+	foreach ($replaced_files as $replaced_file) {
+		WP_CLI::log("元: {$replaced_file['original']} → 新: {$replaced_file['replaced']}");
+
+		try {
+			// wp search-replaceコマンドを実行
+			$command = sprintf(
+				'search-replace %s %s --skip-columns=guid%s',
+				escapeshellarg($replaced_file['original']),
+				escapeshellarg($replaced_file['replaced']),
+				$dry_run ? ' --dry-run' : ''
+			);
+
+			WP_CLI::runcommand($command, array(
+				'launch' => false,
+				'exit_error' => false,
+				'return' => false
+			));
+
+			$processed_count++;
+
+		} catch (Exception $e) {
+			WP_CLI::warning("行 {$total_count}: エラーが発生しました - " . $e->getMessage());
+		}
+	}
 
     WP_CLI::log('');
 }
@@ -110,3 +132,21 @@ if ($dry_run) {
 WP_CLI::log("総行数: {$total_count}");
 WP_CLI::log("処理済み: {$processed_count}");
 WP_CLI::log("スキップ: {$skipped_count}");
+
+
+// すべてのfileパスを収集し、オリジナルと置換後の値を二次元配列で返す関数
+function collectAndReplaceFiles($array, $oldName, $newName, &$result = []) {
+    foreach ($array as $key => $value) {
+        if ($key === 'file' && is_string($value)) {
+            // オリジナルと置換後の値を配列に格納
+            $result[] = [
+                'original' => $value,
+                'replaced' => str_replace($oldName, $newName, $value)
+            ];
+        } elseif (is_array($value)) {
+            // 再帰的に処理
+            collectAndReplaceFiles($value, $oldName, $newName, $result);
+        }
+    }
+    return $result;
+}
