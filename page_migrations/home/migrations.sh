@@ -255,29 +255,11 @@ else
 fi
 
 # ジンバブエACHM協生農園の画像を定義
-ZIMBABWE_ACHM_SYNECOCULTURE_FARM_FILENAME="zimbabwe-achm-synecoculture-farm.jpeg"
-if [ "$IMPORT_MEDIA" == "--import-media" ]; then
-  zimbabwe_achm_synecoculture_farm_id=$(wp media import "$MEDIA_PATH/${ZIMBABWE_ACHM_SYNECOCULTURE_FARM_FILENAME}" --porcelain)
-  message "zimbabwe_achm_synecoculture_farm_id (new import): $zimbabwe_achm_synecoculture_farm_id"
-  zimbabwe_achm_synecoculture_farm_id__en=$(wp eval "echo PLL()->model->post->create_media_translation( $zimbabwe_achm_synecoculture_farm_id, 'en' ); PLL()->model->clean_languages_cache();")
-  message "zimbabwe_achm_synecoculture_farm_id__en (new copy): $zimbabwe_achm_synecoculture_farm_id__en"
-  zimbabwe_achm_synecoculture_farm_id__fr=$(wp eval "echo PLL()->model->post->create_media_translation( $zimbabwe_achm_synecoculture_farm_id, 'fr' ); PLL()->model->clean_languages_cache();")
-  message "zimbabwe_achm_synecoculture_farm_id__fr (new copy): $zimbabwe_achm_synecoculture_farm_id__fr"
-  zimbabwe_achm_synecoculture_farm_id__zh=$(wp eval "echo PLL()->model->post->create_media_translation( $zimbabwe_achm_synecoculture_farm_id, 'zh' ); PLL()->model->clean_languages_cache();")
-  message "zimbabwe_achm_synecoculture_farm_id__zh (new copy): $zimbabwe_achm_synecoculture_farm_id__zh"
-else
-  zimbabwe_achm_synecoculture_farm_id=$(wp eval "echo attachment_url_to_postid( '${WP_UPLOADS_DIR}/${WP_NEW_UPLOADS_DATE_DIR}/${ZIMBABWE_ACHM_SYNECOCULTURE_FARM_FILENAME}' );")
-  if [ "$zimbabwe_achm_synecoculture_farm_id" == 0 ]; then
-    zimbabwe_achm_synecoculture_farm_id=$(wp eval "echo attachment_url_to_postid( '${WP_UPLOADS_DIR}/${WP_NEW_UPLOADS_DATE_DIR}/${_OUR_APPROACH_COVER_FILENAME}-scaled.${OUR_APPROACH_COVER_FILE_FORMAT}' );")
-  fi
-  message "zimbabwe_achm_synecoculture_farm_id (already import): $zimbabwe_achm_synecoculture_farm_id"
-  zimbabwe_achm_synecoculture_farm_id__en=$(wp eval "echo pll_get_post('$zimbabwe_achm_synecoculture_farm_id', 'en');")
-  message "zimbabwe_achm_synecoculture_farm_id__en (fetch): $zimbabwe_achm_synecoculture_farm_id__en"
-  zimbabwe_achm_synecoculture_farm_id__fr=$(wp eval "echo pll_get_post('$zimbabwe_achm_synecoculture_farm_id', 'fr');")
-  message "zimbabwe_achm_synecoculture_farm_id__fr (fetch): $zimbabwe_achm_synecoculture_farm_id__fr"
-  zimbabwe_achm_synecoculture_farm_id__zh=$(wp eval "echo pll_get_post('$zimbabwe_achm_synecoculture_farm_id', 'zh');")
-  message "zimbabwe_achm_synecoculture_farm_id__zh (fetch): $zimbabwe_achm_synecoculture_farm_id__zh"
-fi
+zimbabwe_achm_synecoculture_farm_id=$(wp eval "echo attachment_url_to_postid( '${WP_UPLOADS_DIR}/2020/03/P2180015-scaled.jpeg' );")
+message "zimbabwe_achm_synecoculture_farm_id: $zimbabwe_achm_synecoculture_farm_id"
+zimbabwe_achm_synecoculture_farm_id__en=$(wp eval "echo pll_get_post('$zimbabwe_achm_synecoculture_farm_id', 'en');")
+zimbabwe_achm_synecoculture_farm_id__fr=$(wp eval "echo pll_get_post('$zimbabwe_achm_synecoculture_farm_id', 'fr');")
+zimbabwe_achm_synecoculture_farm_id__zh=$(wp eval "echo pll_get_post('$zimbabwe_achm_synecoculture_farm_id', 'zh');")
 
 # シネコな話バナーの背景画像を定義
 BLOG_COVER_FILENAME="blog-cover.png"
@@ -505,7 +487,7 @@ for post_id in $post_ids; do
     wp post meta add $post_id _wpf_top__strategies__link_url '/case-studies/roppongi-hills-rooftop-synecoculture-farm/'
     wp post meta add $post_id _wpf_top__strategies__bg_image $strategy_2_id__en
 
-    wp post meta add $post_id _wpf_top__our_purpose__cover_image $trilemma_ja_id__en
+    wp post meta add $post_id _wpf_top__our_purpose__cover_image $trilemma_en_id
     wp post meta add $post_id _wpf_top__our_purpose__heading '食・環境・健康のトリレンマを解く。'
     wp post meta add $post_id _wpf_top__our_purpose__body '私たちは、人間による生態系の拡張を通じて、食・健康・環境のトリレンマを乗り越える方法を提示し、自然と社会が相互に高めあう新たな文明装置を探求します。'
 
@@ -641,7 +623,7 @@ for post_id in $post_ids; do
     wp post meta add $post_id _wpf_top__strategies__link_url '/case-studies/roppongi-hills-rooftop-synecoculture-farm/'
     wp post meta add $post_id _wpf_top__strategies__bg_image $strategy_2_id__fr
 
-    wp post meta add $post_id _wpf_top__our_purpose__cover_image $trilemma_ja_id__fr
+    wp post meta add $post_id _wpf_top__our_purpose__cover_image $trilemma_fr_id
     wp post meta add $post_id _wpf_top__our_purpose__heading '食・環境・健康のトリレンマを解く。'
     wp post meta add $post_id _wpf_top__our_purpose__body '私たちは、人間による生態系の拡張を通じて、食・健康・環境のトリレンマを乗り越える方法を提示し、自然と社会が相互に高めあう新たな文明装置を探求します。'
 
@@ -777,7 +759,7 @@ for post_id in $post_ids; do
     wp post meta add $post_id _wpf_top__strategies__link_url '/case-studies/roppongi-hills-rooftop-synecoculture-farm/'
     wp post meta add $post_id _wpf_top__strategies__bg_image $strategy_2_id__zh
 
-    wp post meta add $post_id _wpf_top__our_purpose__cover_image $trilemma_ja_id__zh
+    wp post meta add $post_id _wpf_top__our_purpose__cover_image $trilemma_zh_id
     wp post meta add $post_id _wpf_top__our_purpose__heading '食・環境・健康のトリレンマを解く。'
     wp post meta add $post_id _wpf_top__our_purpose__body '私たちは、人間による生態系の拡張を通じて、食・健康・環境のトリレンマを乗り越える方法を提示し、自然と社会が相互に高めあう新たな文明装置を探求します。'
 

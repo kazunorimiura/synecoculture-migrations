@@ -75,7 +75,7 @@ while (($row = fgetcsv($handle)) !== false) {
         continue;
     }
 
-    WP_CLI::log("行 {$total_count}: 置換を実行 - '{$old_file}' → '{$new_file}'");
+    WP_CLI::log("行 {$total_count}: 置換を実行 - '{$old_file} ({$old_filename})' → '{$new_file} ({$new_filename})'");
 
 	if (!$attach_id) {
 		WP_CLI::warning("画像IDが無効です");
@@ -83,6 +83,7 @@ while (($row = fgetcsv($handle)) !== false) {
     }
 
 	$metadata = wp_get_attachment_metadata($attach_id);
+	WP_CLI::log("メタデータ: " . print_r($metadata, true));
 
 	if (empty($metadata)) {
 		WP_CLI::warning("メタデータを取得しましたが、中身が空でした");
@@ -91,6 +92,7 @@ while (($row = fgetcsv($handle)) !== false) {
 
 	// 置換が必要なすべてのサイズバリエーションのファイル名を収集
 	$replaced_files = collectAndReplaceFiles($metadata, $old_filename, $new_filename);
+	WP_CLI::log("replaced_files: " . print_r($replaced_files, true));
 
 	foreach ($replaced_files as $replaced_file) {
 		WP_CLI::log("元: {$replaced_file['original']} → 新: {$replaced_file['replaced']}");
@@ -140,8 +142,8 @@ function collectAndReplaceFiles($array, $oldName, $newName, &$result = []) {
         if ($key === 'file' && is_string($value)) {
             // オリジナルと置換後の値を配列に格納
             $result[] = [
-                'original' => $value,
-                'replaced' => str_replace($oldName, $newName, $value)
+                'original' => str_replace($newName, $oldName, basename($value)),
+                'replaced' => basename($value)
             ];
         } elseif (is_array($value)) {
             // 再帰的に処理
