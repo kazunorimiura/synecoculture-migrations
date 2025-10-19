@@ -14,6 +14,13 @@ IMPORT_MEDIA=$1
 
 SECONDS=0
 
+
+###
+### セットアップ
+###
+
+./migrations/setup.sh
+
 ###
 ### 必須プラグインを有効化
 ###
@@ -241,5 +248,10 @@ wp plugin deactivate users-customers-import-export-for-wp-woocommerce
 
 ./migrations/update_img_sizes/after.sh
 
+###
+### ティアダウン
+###
+
+./migrations/teardown.sh
 
 echo "処理時間 (migrations/migrations.sh): ${SECONDS}秒"
