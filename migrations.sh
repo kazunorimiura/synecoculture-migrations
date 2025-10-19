@@ -102,13 +102,11 @@ wp import migrations/blog/all-contents-edited.xml --authors=skip --skip=attachme
 
 wp import migrations/blog/posts-edited.xml --authors=skip --skip=attachment,image_resize
 
-
 ###
-### サフィックス付きメディアファイルを正としてDBリネーム
+### サフィックス付きメディアの検出
 ###
 
-./migrations/fix_media_suffix/migrations.sh
-
+./migrations/fix_media_suffix/compare_uploads.sh /srv/www/synecoculture/public_html/wp-content/uploads_old /srv/www/synecoculture/public_html/wp-content/uploads
 
 ###
 ### URLリネーム
@@ -241,6 +239,21 @@ wp plugin deactivate users-customers-import-export-for-wp-woocommerce
 ###
 
 ./migrations/_regenerate_media.sh
+
+###
+### サフィックス付きメディアファイルを正としてDBリネーム
+### NOTE: メディアのxmlインポートの際に、同名ファイルは（たとえ年月ディレクトリが異なっても）
+### `-{number}`サフィックスがつくため、サイズバリエーション含めサフィックス付きにリネームしている。
+### これがアタッチメントIDを変えずに、かつ画像リンク切れも起こさない最適な方法
+###
+
+wp eval-file ./migrations/fix_media_suffix/search-replace.php ./migrations/fix_media_suffix/wp_suffix_report.csv
+
+###
+### サフィックス付きメディアファイル検出で使用した比較用のuploads_oldディレクトリを削除
+###
+
+./migrations/fix_media_suffix/delete_uploads_old.sh
 
 ###
 ### 新しい画像サイズバリエーションを設定
