@@ -31,7 +31,7 @@ foreach ( PLL()->model->get_languages_list() as $language ) {
         $mo->add_entry( $mo->make_entry( 'Français', 'French' ) );
         $mo->add_entry( $mo->make_entry( '简体中文', 'Simplified Chinese' ) );
     } elseif ( $language->slug === 'fr' ) {
-        $mo->add_entry( $mo->make_entry( '一般社団法人シネコカルチャー', 'Synecoculture Association' ) );
+        $mo->add_entry( $mo->make_entry( '一般社団法人シネコカルチャー', 'Association Synecoculture' ) );
         $mo->add_entry( $mo->make_entry( '協生農法は株式会社桜自然塾の商標または登録商標です。', 'Kyosei Noho est une marque commerciale ou une marque déposée de K.K. Sakura Shizenjuku.' ) );
         $mo->add_entry( $mo->make_entry( 'Synecocultureはソニーグループ株式会社の商標です。', 'Synecoculture est une marque commerciale de Sony Group Corporation.' ) );
         $mo->add_entry( $mo->make_entry( 'Y年n月j日', 'j F Y' ) );
