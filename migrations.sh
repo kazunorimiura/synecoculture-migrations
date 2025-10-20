@@ -45,7 +45,7 @@ wp plugin deactivate wp-multibyte-patch
 ### パーマリンク構造を更新
 ###
 
-wp option update permalink_structure '/news/%postname%/'
+wp option update permalink_structure '/news/%post_id%/'
 
 ###
 ### テーマを有効化
