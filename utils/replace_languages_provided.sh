@@ -10,10 +10,10 @@ replace_languages_provided() {
   local langs_json
   langs_json=$(printf '%s\n' "${langs[@]}" | jq -R . | jq -s .)
 
-  # wp eval に渡す
+  # update_post_meta を使う（add_post_meta ではなく）
   updated=$(wp eval "
-    delete_post_meta($post_id, '_wpf_languages_provided'); // 既存のメタデータを削除
-    echo add_post_meta($post_id, '_wpf_languages_provided', json_decode('$langs_json')) . \"\n\";
+    \$result = update_post_meta($post_id, '_wpf_languages_provided', json_decode('$langs_json'));
+    echo \$result ? 'success' : 'failed';
   ")
   echo "Set language provided: $langs_json ($updated)"
 }
