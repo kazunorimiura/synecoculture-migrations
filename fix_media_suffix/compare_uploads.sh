@@ -4,7 +4,7 @@
 # サフィックスが付いたファイルを特定します
 
 # 使い方: ./migrations/fix_media_suffix/compare_uploads.sh <元のuploadsディレクトリ> <移植先のuploadsディレクトリ>
-# ./migrations/fix_media_suffix/compare_uploads.sh /srv/www/synecoculture/public_html/wp-content/uploads_old /srv/www/synecoculture/public_html/wp-content/uploads
+# ./migrations/fix_media_suffix/compare_uploads.sh /srv/www/synecoculture/public_html/wp-content/uploads_old /tmp/wp-media/uploads
 
 
 # 引数チェック

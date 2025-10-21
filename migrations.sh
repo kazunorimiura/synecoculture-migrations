@@ -106,7 +106,7 @@ wp import migrations/blog/posts-edited.xml --authors=skip --skip=attachment,imag
 ### サフィックス付きメディアの検出
 ###
 
-./migrations/fix_media_suffix/compare_uploads.sh /srv/www/synecoculture/public_html/wp-content/uploads_old /srv/www/synecoculture/public_html/wp-content/uploads
+./migrations/fix_media_suffix/compare_uploads.sh /srv/www/synecoculture/public_html/wp-content/uploads_old /tmp/wp-media/uploads
 
 ###
 ### URLリネーム
