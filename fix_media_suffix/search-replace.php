@@ -9,7 +9,7 @@
 
 // 引数からCSVファイルのパスとオプションを取得
 $csv_file = $args[0] ?? null;
-$dry_run = false;
+$dry_run = true;
 
 if (empty($csv_file)) {
     WP_CLI::error('CSVファイルのパスを引数で指定してください。');
@@ -57,6 +57,7 @@ while (($row = fgetcsv($handle)) !== false) {
 
     $new_file = trim($row[0]);
     $old_file = trim($row[1]);
+	$directory = dirname($old_file);
     $new_filename = pathinfo($new_file, PATHINFO_FILENAME);
     $old_filename = pathinfo($old_file, PATHINFO_FILENAME);
     $file_exists = trim($row[2]);
@@ -91,7 +92,7 @@ while (($row = fgetcsv($handle)) !== false) {
     }
 
     // 置換が必要なすべてのサイズバリエーションのファイル名を収集
-    $replaced_files = collectAndReplaceFiles($metadata, $old_filename, $new_filename);
+    $replaced_files = collectAndReplaceFiles($metadata, $old_filename, $new_filename, $directory);
     WP_CLI::log("replaced_files: " . print_r($replaced_files, true));
 
     // 全体の配列に追加
@@ -179,17 +180,17 @@ WP_CLI::log('========================================');
 
 
 // すべてのfileパスを収集し、オリジナルと置換後の値を二次元配列で返す関数
-function collectAndReplaceFiles($array, $oldName, $newName, &$result = []) {
+function collectAndReplaceFiles($array, $oldName, $newName, $directory, &$result = []) {
     foreach ($array as $key => $value) {
         if ($key === 'file' && is_string($value)) {
             // オリジナルと置換後の値を配列に格納
             $result[] = [
-                'original' => str_replace($newName, $oldName, basename($value)),
-                'replaced' => basename($value)
+                'original' => $directory . '/' . str_replace($newName, $oldName, basename($value)),
+                'replaced' => $directory . '/' . basename($value)
             ];
         } elseif (is_array($value)) {
             // 再帰的に処理
-            collectAndReplaceFiles($value, $oldName, $newName, $result);
+            collectAndReplaceFiles($value, $oldName, $newName, $directory, $result);
         }
     }
     return $result;

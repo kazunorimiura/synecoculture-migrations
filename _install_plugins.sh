@@ -12,5 +12,6 @@ wp plugin install mw-wp-form --activate
 wp plugin install recaptcha-for-mw-wp-form --activate
 wp plugin install users-customers-import-export-for-wp-woocommerce --activate
 wp plugin install simple-definition-list-blocks --activate
+wp plugin install simple-user-avatar --activate
 wp plugin install wp-multibyte-patch
 wp plugin activate polylang-pro
