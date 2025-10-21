@@ -5,11 +5,14 @@
  * 使用方法:
  * wp eval-file ./migrations/fix_media_suffix/search-replace.php /path/to/file.csv
  * wp eval-file ./migrations/fix_media_suffix/search-replace.php ./migrations/fix_media_suffix/wp_suffix_report.csv
+ * dry-run:
+ * wp eval-file ./migrations/fix_media_suffix/search-replace.php ./migrations/fix_media_suffix/wp_suffix_report.csv dry-run
  */
 
 // 引数からCSVファイルのパスとオプションを取得
 $csv_file = $args[0] ?? null;
-$dry_run = true;
+$dry_run = isset($args[1]) && in_array(strtolower($args[1]), ['dry-run', 'dry_run', 'dryrun']);
+
 
 if (empty($csv_file)) {
     WP_CLI::error('CSVファイルのパスを引数で指定してください。');
