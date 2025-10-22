@@ -67,6 +67,16 @@ fi
 ./migrations/page_migrations/contact/migrations.sh
 
 ###
+### ブログのマイグレーション
+###
+
+if [ "$IMPORT_MEDIA" == "--import-media" ]; then
+  ./migrations/page_migrations/blog/migrations.sh --import-media
+else
+  ./migrations/page_migrations/blog/migrations.sh
+fi
+
+###
 ### Synecocultureマニュアルのマイグレーション
 ###
 
