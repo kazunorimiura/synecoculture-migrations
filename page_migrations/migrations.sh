@@ -61,6 +61,12 @@ fi
 ./migrations/page_migrations/history/migrations.sh
 
 ###
+### 問い合わせのマイグレーション
+###
+
+./migrations/page_migrations/contact/migrations.sh
+
+###
 ### Synecocultureマニュアルのマイグレーション
 ###
 
