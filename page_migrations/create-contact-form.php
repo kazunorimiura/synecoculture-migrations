@@ -76,7 +76,7 @@ $form_content = '<div class="prose">
     </div>
 
     <p class="text-center" style="--flow-space: var(--space-s3)">
-        <span class="d-block mbe-s-3 font-text--sm">取得した個人情報は<a href="/privacy-policy/" target="_blank" rel="noopener">個人情報保護方針</a>に従って取り扱いを行います。</span>
+        <span class="d-block mbe-s-3 font-text--sm">取得した個人情報は個人情報保護方針に従って取り扱いを行います。</span>
         [mwform_checkbox name="privacy-consent" id="privacy-consent" children="個人情報保護方針に同意する" separator="," show_error="false"]
 		[mwform_error keys="privacy-consent"]
     </p>
@@ -356,7 +356,7 @@ $form_content = '<div class="prose">
     </div>
 
     <p class="text-center" style="--flow-space: var(--space-s3)">
-        <span class="d-block mbe-s-3 font-text--sm">取得した個人情報は<a href="/privacy-policy/" target="_blank" rel="noopener">個人情報保護方針</a>に従って取り扱いを行います。</span>
+        <span class="d-block mbe-s-3 font-text--sm">取得した個人情報は個人情報保護方針に従って取り扱いを行います。</span>
         [mwform_checkbox name="privacy-consent" id="privacy-consent" children="個人情報保護方針に同意する" separator="," show_error="false"]
 		[mwform_error keys="privacy-consent"]
     </p>
@@ -618,7 +618,7 @@ $form_content = '<div class="prose">
     </div>
 
     <p class="text-center" style="--flow-space: var(--space-s3)">
-        <span class="d-block mbe-s-3 font-text--sm">取得した個人情報は<a href="/privacy-policy/" target="_blank" rel="noopener">個人情報保護方針</a>に従って取り扱いを行います。</span>
+        <span class="d-block mbe-s-3 font-text--sm">取得した個人情報は個人情報保護方針に従って取り扱いを行います。</span>
         [mwform_checkbox name="privacy-consent" id="privacy-consent" children="個人情報保護方針に同意する" separator="," show_error="false"]
 		[mwform_error keys="privacy-consent"]
     </p>
@@ -880,7 +880,7 @@ $form_content = '<div class="prose">
     </div>
 
     <p class="text-center" style="--flow-space: var(--space-s3)">
-        <span class="d-block mbe-s-3 font-text--sm">取得した個人情報は<a href="/privacy-policy/" target="_blank" rel="noopener">個人情報保護方針</a>に従って取り扱いを行います。</span>
+        <span class="d-block mbe-s-3 font-text--sm">取得した個人情報は個人情報保護方針に従って取り扱いを行います。</span>
         [mwform_checkbox name="privacy-consent" id="privacy-consent" children="個人情報保護方針に同意する" separator="," show_error="false"]
 		[mwform_error keys="privacy-consent"]
     </p>
