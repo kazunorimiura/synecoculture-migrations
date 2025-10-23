@@ -280,14 +280,14 @@ assign_menu "primary" $tr_menu_id "en"
 
 # メニューアイテムを追加
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "about" "en")
-add_custom_link_menu_item $tr_menu_id "Our Purpose" "http://synecoculture.test/en/about/#our-purpose" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "社団の存在意義" "http://synecoculture.test/en/about/#our-purpose" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/message" "en" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "members" "en" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/company-profile" "en" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/history" "en" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "en")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "en" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "en" $menu_item_id "Syneco Portal"
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "en" $menu_item_id "シネコポータル"
 add_post_type_menu_item page $tr_menu_id "manual" "en" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "en" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "en")
@@ -295,10 +295,10 @@ add_taxonomy_term_menu_item "project_cat" "academics-and-research" $tr_menu_id "
 add_taxonomy_term_menu_item "project_cat" "collaboration-and-partnership" $tr_menu_id "en" $menu_item_id
 add_taxonomy_term_menu_item "project_cat" "education-and-outreach" $tr_menu_id "en" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "join" "en")
-add_custom_link_menu_item $tr_menu_id "For Prospective Donors" "http://synecoculture.test/en/join/#for-prospective-donors" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Kyoto University Partnership Donations" "http://synecoculture.test/en/join/#kyoto-university-partnership-donations" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Donation Usage Report" "http://synecoculture.test/en/join/#donation-usage-report" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Joint Research & Development Inquiries" "http://synecoculture.test/en/join/#joint-research-development-inquiries" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "ご寄付をお考えの方へ" "http://synecoculture.test/en/join/#for-prospective-donors" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "京都大学連携寄付" "http://synecoculture.test/en/join/#kyoto-university-partnership-donations" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "寄付金使途報告" "http://synecoculture.test/en/join/#donation-usage-report" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "共同研究・開発のご相談" "http://synecoculture.test/en/join/#joint-research-development-inquiries" $menu_item_id
 
 ###
 ### プライマリ（フランス語）
@@ -314,14 +314,14 @@ assign_menu "primary" $tr_menu_id "fr"
 
 # メニューアイテムを追加
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "about" "fr")
-add_custom_link_menu_item $tr_menu_id "Notre Objectif" "http://synecoculture.test/fr/about/#our-purpose" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "社団の存在意義" "http://synecoculture.test/fr/about/#our-purpose" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/message" "fr" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "members" "fr" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/company-profile" "fr" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/history" "fr" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "fr")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "fr" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "fr" $menu_item_id "Portail Syneco"
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "fr" $menu_item_id "シネコポータル"
 add_post_type_menu_item page $tr_menu_id "manual" "fr" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "fr" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "fr")
@@ -329,10 +329,10 @@ add_taxonomy_term_menu_item "project_cat" "academics-and-research" $tr_menu_id "
 add_taxonomy_term_menu_item "project_cat" "collaboration-and-partnership" $tr_menu_id "fr" $menu_item_id
 add_taxonomy_term_menu_item "project_cat" "education-and-outreach" $tr_menu_id "fr" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "join" "fr")
-add_custom_link_menu_item $tr_menu_id "Pour les donateurs potentiels" "http://synecoculture.test/fr/join/#for-prospective-donors" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Dons en partenariat avec l'Université de Kyoto" "http://synecoculture.test/fr/join/#kyoto-university-partnership-donations" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Rapport sur l'utilisation des dons" "http://synecoculture.test/fr/join/#donation-usage-report" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Consultation pour la recherche collaborative" "http://synecoculture.test/fr/join/#joint-research-development-inquiries" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "ご寄付をお考えの方へ" "http://synecoculture.test/fr/join/#for-prospective-donors" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "京都大学連携寄付" "http://synecoculture.test/fr/join/#kyoto-university-partnership-donations" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "寄付金使途報告" "http://synecoculture.test/fr/join/#donation-usage-report" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "共同研究・開発のご相談" "http://synecoculture.test/fr/join/#joint-research-development-inquiries" $menu_item_id
 
 ###
 ### プライマリ（中国語）
@@ -348,14 +348,14 @@ assign_menu "primary" $tr_menu_id "zh"
 
 # メニューアイテムを追加
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "about" "zh")
-add_custom_link_menu_item $tr_menu_id "我们的宗旨" "http://synecoculture.test/zh/about/#our-purpose" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "社団の存在意義" "http://synecoculture.test/zh/about/#our-purpose" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/message" "zh" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "members" "zh" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/company-profile" "zh" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/history" "zh" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "zh")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "zh" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "zh" $menu_item_id "Syneco门户"
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "zh" $menu_item_id "シネコポータル"
 add_post_type_menu_item page $tr_menu_id "manual" "zh" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "zh" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "zh")
@@ -363,10 +363,10 @@ add_taxonomy_term_menu_item "project_cat" "academics-and-research" $tr_menu_id "
 add_taxonomy_term_menu_item "project_cat" "collaboration-and-partnership" $tr_menu_id "zh" $menu_item_id
 add_taxonomy_term_menu_item "project_cat" "education-and-outreach" $tr_menu_id "zh" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "join" "zh")
-add_custom_link_menu_item $tr_menu_id "致考虑捐赠者" "http://synecoculture.test/zh/join/#for-prospective-donors" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "京都大学合作捐赠" "http://synecoculture.test/zh/join/#kyoto-university-partnership-donations" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "捐款使用报告" "http://synecoculture.test/zh/join/#donation-usage-report" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "合作研究·开发咨询" "http://synecoculture.test/zh/join/#joint-research-development-inquiries" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "ご寄付をお考えの方へ" "http://synecoculture.test/zh/join/#for-prospective-donors" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "京都大学連携寄付" "http://synecoculture.test/zh/join/#kyoto-university-partnership-donations" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "寄付金使途報告" "http://synecoculture.test/zh/join/#donation-usage-report" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "共同研究・開発のご相談" "http://synecoculture.test/zh/join/#joint-research-development-inquiries" $menu_item_id
 
 ###
 ### プライマリCTA（デフォルト言語）
@@ -478,14 +478,14 @@ assign_menu "global_primary" $tr_menu_id "en"
 # メニューアイテムを追加
 add_post_type_menu_item page $tr_menu_id "home" "en"
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "about" "en")
-add_custom_link_menu_item $tr_menu_id "Our Purpose" "http://synecoculture.test/en/about/#our-purpose" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "社団の存在意義" "http://synecoculture.test/en/about/#our-purpose" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/message" "en" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "members" "en" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/company-profile" "en" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/history" "en" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "en")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "en" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "en" $menu_item_id "Syneco Portal"
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "en" $menu_item_id "シネコポータル"
 add_post_type_menu_item page $tr_menu_id "manual" "en" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "en" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "en")
@@ -493,10 +493,10 @@ add_taxonomy_term_menu_item "project_cat" "academics-and-research" $tr_menu_id "
 add_taxonomy_term_menu_item "project_cat" "collaboration-and-partnership" $tr_menu_id "en" $menu_item_id
 add_taxonomy_term_menu_item "project_cat" "education-and-outreach" $tr_menu_id "en" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "join" "en")
-add_custom_link_menu_item $tr_menu_id "For Prospective Donors" "http://synecoculture.test/en/join/#for-prospective-donors" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Kyoto University Partnership Donations" "http://synecoculture.test/en/join/#kyoto-university-partnership-donations" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Donation Usage Report" "http://synecoculture.test/en/join/#donation-usage-report" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Joint Research & Development Inquiries" "http://synecoculture.test/en/join/#joint-research-development-inquiries" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "ご寄付をお考えの方へ" "http://synecoculture.test/en/join/#for-prospective-donors" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "京都大学連携寄付" "http://synecoculture.test/en/join/#kyoto-university-partnership-donations" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "寄付金使途報告" "http://synecoculture.test/en/join/#donation-usage-report" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "共同研究・開発のご相談" "http://synecoculture.test/en/join/#joint-research-development-inquiries" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "blog" "en"
 add_post_type_menu_item page $tr_menu_id "news" "en"
 add_post_type_menu_item page $tr_menu_id "contact" "en"
@@ -516,14 +516,14 @@ assign_menu "global_primary" $tr_menu_id "fr"
 # メニューアイテムを追加
 add_post_type_menu_item page $tr_menu_id "home" "fr"
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "about" "fr")
-add_custom_link_menu_item $tr_menu_id "Notre Objectif" "http://synecoculture.test/fr/about/#our-purpose" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "社団の存在意義" "http://synecoculture.test/fr/about/#our-purpose" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/message" "fr" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "members" "fr" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/company-profile" "fr" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/history" "fr" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "fr")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "fr" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "fr" $menu_item_id "Portail Syneco"
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "fr" $menu_item_id "シネコポータル"
 add_post_type_menu_item page $tr_menu_id "manual" "fr" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "fr" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "fr")
@@ -531,10 +531,10 @@ add_taxonomy_term_menu_item "project_cat" "academics-and-research" $tr_menu_id "
 add_taxonomy_term_menu_item "project_cat" "collaboration-and-partnership" $tr_menu_id "fr" $menu_item_id
 add_taxonomy_term_menu_item "project_cat" "education-and-outreach" $tr_menu_id "fr" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "join" "fr")
-add_custom_link_menu_item $tr_menu_id "Pour les donateurs potentiels" "http://synecoculture.test/fr/join/#for-prospective-donors" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Dons en partenariat avec l'Université de Kyoto" "http://synecoculture.test/fr/join/#kyoto-university-partnership-donations" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Rapport sur l'utilisation des dons" "http://synecoculture.test/fr/join/#donation-usage-report" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Consultation pour la recherche collaborative" "http://synecoculture.test/fr/join/#joint-research-development-inquiries" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "ご寄付をお考えの方へ" "http://synecoculture.test/fr/join/#for-prospective-donors" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "京都大学連携寄付" "http://synecoculture.test/fr/join/#kyoto-university-partnership-donations" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "寄付金使途報告" "http://synecoculture.test/fr/join/#donation-usage-report" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "共同研究・開発のご相談" "http://synecoculture.test/fr/join/#joint-research-development-inquiries" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "blog" "fr"
 add_post_type_menu_item page $tr_menu_id "news" "fr"
 add_post_type_menu_item page $tr_menu_id "contact" "fr"
@@ -554,14 +554,14 @@ assign_menu "global_primary" $tr_menu_id "zh"
 # メニューアイテムを追加
 add_post_type_menu_item page $tr_menu_id "home" "zh"
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "about" "zh")
-add_custom_link_menu_item $tr_menu_id "我们的宗旨" "http://synecoculture.test/zh/about/#our-purpose" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "社団の存在意義" "http://synecoculture.test/zh/about/#our-purpose" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/message" "zh" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "members" "zh" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/company-profile" "zh" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/history" "zh" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "zh")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "zh" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "zh" $menu_item_id "Syneco门户"
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "zh" $menu_item_id "シネコポータル"
 add_post_type_menu_item page $tr_menu_id "manual" "zh" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "zh" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "zh")
@@ -569,10 +569,10 @@ add_taxonomy_term_menu_item "project_cat" "academics-and-research" $tr_menu_id "
 add_taxonomy_term_menu_item "project_cat" "collaboration-and-partnership" $tr_menu_id "zh" $menu_item_id
 add_taxonomy_term_menu_item "project_cat" "education-and-outreach" $tr_menu_id "zh" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "join" "zh")
-add_custom_link_menu_item $tr_menu_id "致考虑捐赠者" "http://synecoculture.test/zh/join/#for-prospective-donors" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "京都大学合作捐赠" "http://synecoculture.test/zh/join/#kyoto-university-partnership-donations" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "捐款使用报告" "http://synecoculture.test/zh/join/#donation-usage-report" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "合作研究·开发咨询" "http://synecoculture.test/zh/join/#joint-research-development-inquiries" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "ご寄付をお考えの方へ" "http://synecoculture.test/zh/join/#for-prospective-donors" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "京都大学連携寄付" "http://synecoculture.test/zh/join/#kyoto-university-partnership-donations" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "寄付金使途報告" "http://synecoculture.test/zh/join/#donation-usage-report" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "共同研究・開発のご相談" "http://synecoculture.test/zh/join/#joint-research-development-inquiries" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "blog" "zh"
 add_post_type_menu_item page $tr_menu_id "news" "zh"
 add_post_type_menu_item page $tr_menu_id "contact" "zh"
@@ -792,14 +792,14 @@ assign_menu "footer_primary" $tr_menu_id "en"
 
 # メニューアイテムを追加
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "about" "en")
-add_custom_link_menu_item $tr_menu_id "Our Purpose" "http://synecoculture.test/en/about/#our-purpose" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "社団の存在意義" "http://synecoculture.test/en/about/#our-purpose" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/message" "en" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "members" "en" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/company-profile" "en" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/history" "en" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "en")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "en" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "en" $menu_item_id "Syneco Portal"
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "en" $menu_item_id "シネコポータル"
 add_post_type_menu_item page $tr_menu_id "manual" "en" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "en" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "en")
@@ -807,10 +807,10 @@ add_taxonomy_term_menu_item "project_cat" "academics-and-research" $tr_menu_id "
 add_taxonomy_term_menu_item "project_cat" "collaboration-and-partnership" $tr_menu_id "en" $menu_item_id
 add_taxonomy_term_menu_item "project_cat" "education-and-outreach" $tr_menu_id "en" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "join" "en")
-add_custom_link_menu_item $tr_menu_id "For Prospective Donors" "http://synecoculture.test/en/join/#for-prospective-donors" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Kyoto University Partnership Donations" "http://synecoculture.test/en/join/#kyoto-university-partnership-donations" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Donation Usage Report" "http://synecoculture.test/en/join/#donation-usage-report" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Joint Research & Development Inquiries" "http://synecoculture.test/en/join/#joint-research-development-inquiries" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "ご寄付をお考えの方へ" "http://synecoculture.test/en/join/#for-prospective-donors" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "京都大学連携寄付" "http://synecoculture.test/en/join/#kyoto-university-partnership-donations" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "寄付金使途報告" "http://synecoculture.test/en/join/#donation-usage-report" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "共同研究・開発のご相談" "http://synecoculture.test/en/join/#joint-research-development-inquiries" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "blog" "en"
 add_post_type_menu_item page $tr_menu_id "news" "en"
 add_post_type_menu_item page $tr_menu_id "contact" "en"
@@ -829,14 +829,14 @@ assign_menu "footer_primary" $tr_menu_id "fr"
 
 # メニューアイテムを追加
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "about" "fr")
-add_custom_link_menu_item $tr_menu_id "Notre Objectif" "http://synecoculture.test/fr/about/#our-purpose" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "社団の存在意義" "http://synecoculture.test/fr/about/#our-purpose" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/message" "fr" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "members" "fr" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/company-profile" "fr" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/history" "fr" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "fr")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "fr" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "fr" $menu_item_id "Portail Syneco"
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "fr" $menu_item_id "シネコポータル"
 add_post_type_menu_item page $tr_menu_id "manual" "fr" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "fr" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "fr")
@@ -844,10 +844,10 @@ add_taxonomy_term_menu_item "project_cat" "academics-and-research" $tr_menu_id "
 add_taxonomy_term_menu_item "project_cat" "collaboration-and-partnership" $tr_menu_id "fr" $menu_item_id
 add_taxonomy_term_menu_item "project_cat" "education-and-outreach" $tr_menu_id "fr" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "join" "fr")
-add_custom_link_menu_item $tr_menu_id "Pour les donateurs potentiels" "http://synecoculture.test/fr/join/#for-prospective-donors" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Dons en partenariat avec l'Université de Kyoto" "http://synecoculture.test/fr/join/#kyoto-university-partnership-donations" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Rapport sur l'utilisation des dons" "http://synecoculture.test/fr/join/#donation-usage-report" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "Consultation pour la recherche collaborative" "http://synecoculture.test/fr/join/#joint-research-development-inquiries" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "ご寄付をお考えの方へ" "http://synecoculture.test/fr/join/#for-prospective-donors" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "京都大学連携寄付" "http://synecoculture.test/fr/join/#kyoto-university-partnership-donations" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "寄付金使途報告" "http://synecoculture.test/fr/join/#donation-usage-report" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "共同研究・開発のご相談" "http://synecoculture.test/fr/join/#joint-research-development-inquiries" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "blog" "fr"
 add_post_type_menu_item page $tr_menu_id "news" "fr"
 add_post_type_menu_item page $tr_menu_id "contact" "fr"
@@ -866,14 +866,14 @@ assign_menu "footer_primary" $tr_menu_id "zh"
 
 # メニューアイテムを追加
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "about" "zh")
-add_custom_link_menu_item $tr_menu_id "我们的宗旨" "http://synecoculture.test/zh/about/#our-purpose" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "社団の存在意義" "http://synecoculture.test/zh/about/#our-purpose" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/message" "zh" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "members" "zh" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/company-profile" "zh" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "about/history" "zh" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "learn" "zh")
 add_post_type_menu_item page $tr_menu_id "learn/about-synecoculture" "zh" $menu_item_id
-add_post_type_menu_item project $tr_menu_id "syneco-portal" "zh" $menu_item_id "Syneco门户"
+add_post_type_menu_item project $tr_menu_id "syneco-portal" "zh" $menu_item_id "シネコポータル"
 add_post_type_menu_item page $tr_menu_id "manual" "zh" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "case-studies" "zh" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "projects" "zh")
@@ -881,10 +881,10 @@ add_taxonomy_term_menu_item "project_cat" "academics-and-research" $tr_menu_id "
 add_taxonomy_term_menu_item "project_cat" "collaboration-and-partnership" $tr_menu_id "zh" $menu_item_id
 add_taxonomy_term_menu_item "project_cat" "education-and-outreach" $tr_menu_id "zh" $menu_item_id
 menu_item_id=$(add_post_type_menu_item page $tr_menu_id "join" "zh")
-add_custom_link_menu_item $tr_menu_id "致考虑捐赠者" "http://synecoculture.test/zh/join/#for-prospective-donors" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "京都大学合作捐赠" "http://synecoculture.test/zh/join/#kyoto-university-partnership-donations" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "捐款使用报告" "http://synecoculture.test/zh/join/#donation-usage-report" $menu_item_id
-add_custom_link_menu_item $tr_menu_id "合作研究·开发咨询" "http://synecoculture.test/zh/join/#joint-research-development-inquiries" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "ご寄付をお考えの方へ" "http://synecoculture.test/zh/join/#for-prospective-donors" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "京都大学連携寄付" "http://synecoculture.test/zh/join/#kyoto-university-partnership-donations" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "寄付金使途報告" "http://synecoculture.test/zh/join/#donation-usage-report" $menu_item_id
+add_custom_link_menu_item $tr_menu_id "共同研究・開発のご相談" "http://synecoculture.test/zh/join/#joint-research-development-inquiries" $menu_item_id
 add_post_type_menu_item page $tr_menu_id "blog" "zh"
 add_post_type_menu_item page $tr_menu_id "news" "zh"
 add_post_type_menu_item page $tr_menu_id "contact" "zh"
