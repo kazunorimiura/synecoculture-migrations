@@ -1,14 +1,12 @@
 #!/bin/bash
 
-# ./migrations/page_migrations/privacy-policy/migrations.sh
+# ./migrations/page_migrations/case-studies/migrations.sh
 
 source ./migrations/utils/message.sh
 source ./migrations/utils/replace_languages_provided.sh
 
-### メイン処理 ###
-
-# privacy-policyスラッグの固定ページを全言語分取得
-post_ids=$(wp post list --post_type=page --name="privacy-policy" --field=ID)
+# case-studiesスラッグの固定ページを全言語分取得
+post_ids=$(wp post list --post_type=page --name="case-studies" --field=ID)
 for post_id in $post_ids; do
   lang=$(wp eval "echo pll_get_post_language('$post_id', 'slug');")
   message "lang: $lang"

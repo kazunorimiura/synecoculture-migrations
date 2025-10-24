@@ -45,7 +45,7 @@ for post_id in $post_ids; do
     echo "メディアID: ${media_ids[default]}, ${media_ids[en]}, ${media_ids[fr]}, ${media_ids[zh]}"
     wp post meta update $post_id _thumbnail_id "${media_ids[default]}"
 
-    wp post term add $post_id member_cat representative-director
+    wp post term add $post_id member_cat founder-and-president
 
     wp post term add $post_id member_tag "social-common-capital-and-the-future"
   elif [ "$post_slug" == "kengo-nagahashi" ]; then

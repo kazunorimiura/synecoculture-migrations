@@ -77,15 +77,86 @@ else
 fi
 
 ###
+### メンバーのマイグレーション
+###
+
+./migrations/page_migrations/members/migrations.sh
+
+###
+### 研究・活動のマイグレーション
+###
+
+./migrations/page_migrations/projects/migrations.sh
+
+###
+### 実践事例のマイグレーション
+###
+
+./migrations/page_migrations/case-studies/migrations.sh
+
+###
+### 資料・FAQのマイグレーション
+###
+
+./migrations/page_migrations/resources/migrations.sh
+
+###
+### よくある質問のマイグレーション
+###
+
+./migrations/page_migrations/faq/migrations.sh
+
+###
+### ダウンロード資料のマイグレーション
+###
+
+./migrations/page_migrations/documents/migrations.sh
+
+###
+### 用語集のマイグレーション
+###
+
+./migrations/page_migrations/glossary/migrations.sh
+
+###
+### 採用情報のマイグレーション
+###
+
+./migrations/page_migrations/careers/migrations.sh
+
+###
+### 個人情報保護方針のマイグレーション
+###
+
+./migrations/page_migrations/privacy-policy/migrations.sh
+
+###
+### 学ぶのマイグレーション
+###
+
+./migrations/page_migrations/learn/migrations.sh
+
+###
+### ニュースのマイグレーション
+###
+
+./migrations/page_migrations/news/migrations.sh
+
+###
+### シネコカルチャーとはのマイグレーション
+###
+
+./migrations/page_migrations/about-synecoculture/migrations.sh
+
+###
 ### Synecocultureマニュアルのマイグレーション
 ###
 
-# NOTE: 一旦Coming soonなので、カバー画像のマイグレーションのみなのでコメントアウト
-# if [ "$IMPORT_MEDIA" == "--import-media" ]; then
-#   ./migrations/page_migrations/manual/migrations.sh --import-media
-# else
-#   ./migrations/page_migrations/manual/migrations.sh
-# fi
+if [ "$IMPORT_MEDIA" == "--import-media" ]; then
+  ./migrations/page_migrations/manual/migrations.sh --import-media
+else
+  ./migrations/page_migrations/manual/migrations.sh
+fi
 
 ###
 ### ホームページの表示設定を更新

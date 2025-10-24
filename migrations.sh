@@ -121,6 +121,7 @@ wp import migrations/blog/posts-edited.xml --authors=skip --skip=attachment,imag
 ./migrations/utils/create_terms.sh migrations/_category_terms.csv category
 ./migrations/utils/create_terms.sh migrations/_post_tag_terms.csv post_tag
 ./migrations/utils/create_terms.sh migrations/_member_cat_terms.csv member_cat
+./migrations/utils/create_terms.sh migrations/_member_tag_terms.csv member_tag
 ./migrations/utils/create_terms.sh migrations/_project_cat_terms.csv project_cat
 ./migrations/utils/create_terms.sh migrations/_project_domain_terms.csv project_domain
 ./migrations/utils/create_terms.sh migrations/_area_terms.csv area
@@ -177,6 +178,13 @@ if [ "$IMPORT_MEDIA" == "--import-media" ]; then
 else
   ./migrations/case_studies/migrations.sh
 fi
+
+###
+### ユーザー作成、投稿へのアタッチ（サンプルで１投稿のみ）
+###
+
+wp eval-file ./migrations/users/create-users.php
+wp eval-file ./migrations/users/update-post-authors.php
 
 ###
 ### no-image画像を設定
