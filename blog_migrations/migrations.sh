@@ -18,8 +18,9 @@ for post_id in $post_ids; do
   post_title=$(wp post get $post_id --field=post_title)
   message "$lang, $post_id, $post_title" bold
 
-  # 事前にカスタムフィールドをクリーンアップ
-  wp post meta delete $post_id --all
+  # NOTE: ブログのxmlインポートで設定されたサムネイルが削除されてしまうためコメントアウト
+  # # 事前にカスタムフィールドをクリーンアップ
+  # wp post meta delete $post_id --all
 
   ###
   ### xmlインポート時点では日本語の記事がほとんどだが、中には英語のみ提供の投稿もあるため、適宜ふさわしい言語版に振り分ける
