@@ -105,6 +105,8 @@ for post_id in $post_ids; do
     wp post meta add $post_id _wpf_about__intro__body "一般社団法人シネコカルチャーは、食料生産が環境回復の起点となる農法・Synecoculture™をはじめとした拡張生態系の実証研究や普及活動に取り組む団体です。ソニーCSLでの基礎研究を経て、2018年に社会実装の橋渡し役として設立されました。"
     wp post meta add $post_id _wpf_about__intro__image $jitti_setsumei_id
 
+    wp post meta add $post_id _wpf_about__our_values__header__heading "行動指針"
+
     wp post meta add $post_id _wpf_about__our_values__heading "科学的探究"
     wp post meta add $post_id _wpf_about__our_values__body "多分野のリサーチャー、ナビゲーターが協働・越境し、拡張生態系の理論と実証を深める。"
 
@@ -145,6 +147,8 @@ for post_id in $post_ids; do
 
     wp post meta add $post_id _wpf_about__intro__body "一般社団法人シネコカルチャーは、食料生産が環境回復の起点となる農法・Synecoculture™をはじめとした拡張生態系の実証研究や普及活動に取り組む団体です。ソニーCSLでの基礎研究を経て、2018年に社会実装の橋渡し役として設立されました。"
     wp post meta add $post_id _wpf_about__intro__image $jitti_setsumei_id__en
+
+    wp post meta add $post_id _wpf_about__our_values__header__heading "行動指針"
 
     wp post meta add $post_id _wpf_about__our_values__heading "科学的探究"
     wp post meta add $post_id _wpf_about__our_values__body "多分野のリサーチャー、ナビゲーターが協働・越境し、拡張生態系の理論と実証を深める。"
@@ -187,6 +191,8 @@ for post_id in $post_ids; do
     wp post meta add $post_id _wpf_about__intro__body "一般社団法人シネコカルチャーは、食料生産が環境回復の起点となる農法・Synecoculture™をはじめとした拡張生態系の実証研究や普及活動に取り組む団体です。ソニーCSLでの基礎研究を経て、2018年に社会実装の橋渡し役として設立されました。"
     wp post meta add $post_id _wpf_about__intro__image $jitti_setsumei_id__fr
 
+    wp post meta add $post_id _wpf_about__our_values__header__heading "行動指針"
+
     wp post meta add $post_id _wpf_about__our_values__heading "科学的探究"
     wp post meta add $post_id _wpf_about__our_values__body "多分野のリサーチャー、ナビゲーターが協働・越境し、拡張生態系の理論と実証を深める。"
 
@@ -227,6 +233,8 @@ for post_id in $post_ids; do
 
     wp post meta add $post_id _wpf_about__intro__body "一般社団法人シネコカルチャーは、食料生産が環境回復の起点となる農法・Synecoculture™をはじめとした拡張生態系の実証研究や普及活動に取り組む団体です。ソニーCSLでの基礎研究を経て、2018年に社会実装の橋渡し役として設立されました。"
     wp post meta add $post_id _wpf_about__intro__image $jitti_setsumei_id__zh
+
+    wp post meta add $post_id _wpf_about__our_values__header__heading "行動指針"
 
     wp post meta add $post_id _wpf_about__our_values__heading "科学的探究"
     wp post meta add $post_id _wpf_about__our_values__body "多分野のリサーチャー、ナビゲーターが協働・越境し、拡張生態系の理論と実証を深める。"
