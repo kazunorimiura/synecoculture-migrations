@@ -11,6 +11,10 @@ for post_id in $post_ids; do
   lang=$(wp eval "echo pll_get_post_language('$post_id', 'slug');")
   message "lang: $lang"
 
+  if [ "$lang" != "ja" ]; then
+    continue
+  fi
+
   # 事前にカスタムフィールドをクリーンアップ
   wp post meta delete $post_id --all
 

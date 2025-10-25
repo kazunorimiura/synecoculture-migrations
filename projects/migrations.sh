@@ -41,6 +41,9 @@ for post_id in $post_ids; do
     continue
   fi
 
+  # 事前にカスタムフィールドをクリーンアップ
+  wp post meta delete $post_id --all
+
   post_slug=$(wp post get $post_id --field=post_name)
 
   replace_languages_provided $post_id ja

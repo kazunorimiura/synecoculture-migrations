@@ -13,6 +13,9 @@ for post_id in $post_ids; do
 
   # 日本語版
   if [ "$lang" == "ja" ]; then
+    # 事前にカスタムフィールドをクリーンアップ
+    wp post meta delete $post_id --all
+
     replace_languages_provided $post_id ja en
     break
   fi

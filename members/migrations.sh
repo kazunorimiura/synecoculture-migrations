@@ -10,6 +10,7 @@ set +a
 
 source ./migrations/utils/message.sh
 source ./migrations/utils/import_media.sh
+source ./migrations/utils/replace_languages_provided.sh
 
 IMPORT_MEDIA=$1
 
@@ -34,6 +35,11 @@ for post_id in $post_ids; do
   if [ "$lang" != "ja" ]; then
     continue
   fi
+
+  # 事前にカスタムフィールドをクリーンアップ
+  wp post meta delete $post_id --all
+
+  replace_languages_provided $post_id ja
 
   post_slug=$(wp post get $post_id --field=post_name)
 
