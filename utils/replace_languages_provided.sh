@@ -10,12 +10,9 @@ replace_languages_provided() {
   local langs_json
   langs_json=$(printf '%s\n' "${langs[@]}" | jq -R . | jq -s .)
 
-  # wp cliで削除
-  # NOTE: 後続のwp eval内でdelete_post_metaをしてもうまく削除されていないようなので。
-  wp post meta delete $post_id _wpf_languages_provided
-
   # まず既存のメタデータを削除してから追加
   wp eval "
+    delete_post_meta($post_id, '_wpf_languages_provided');
     \$result = add_post_meta($post_id, '_wpf_languages_provided', json_decode('$langs_json'), true);
     echo \$result ? 'success' : 'failed';
   "
