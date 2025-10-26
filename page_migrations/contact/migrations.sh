@@ -15,8 +15,5 @@ for post_id in $post_ids; do
     continue
   fi
 
-  # 事前にカスタムフィールドをクリーンアップ
-  wp post meta delete $post_id --all
-
   replace_languages_provided $post_id ja
 done
