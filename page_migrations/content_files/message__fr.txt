@@ -1,15 +1,15 @@
 <!-- wp:paragraph -->
-<p>In contrast to the 20th century, when science and technology have developed rapidly, the 21st century will be an era that will urge the reconstruction of the relationship between humans and nature. Climate variability and the loss of biodiversity are pressing for a transformative change of human activity for our survival on Earth. The Synecoculture farming method and augmented ecosystems aim to be a means for human society to create a new sustainable civilization through the transformation of various industries, which will also shape our raison d’etre and view of nature.</p>
+<p>科学技術が急速に発達した20世紀に対して、21世紀は人と自然の関係が再構築される時代になるでしょう。 気候変動や生物多様性の喪失は、我々が地球上で存続していく上で根本的な人間活動の作り直しを迫っています。 協生農法や拡張生態系は、人類社会が様々な産業形態の転換を通じて新しい自然を創り上げる手段であると同時に、我々自身の存在意義や自然観を構築していく文明装置となることを志向しています。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The research activity of Synecoculture has started in 2010, which is expanding around the world with the help of many fellow collaborators. Through the promotion of Synecoculture, the concept of augmented ecosystems that enables the synergistic realization of essential human activities and ecosystem functions has also been formed. We established Synecoculture Association in 2018 to contribute to the sustainability of human society and global ecosystems through the research and benefit-sharing on the wide range of possibilities of augmented ecosystems.</p>
+<p>2010年に始まった協生農法の研究活動も、多くの有為な協力者の助力を受けて、今や世界各地で実践者が増えつつあります。協生農法の推進を通じて、エッセンシャルな人間活動と生態系機能の相乗的な実現を可能にする拡張生態系という概念も生まれてきました。 今後の人類社会そしてグローバルな生態系の持続可能性への貢献と、拡張生態系の持つ広範な可能性を探索・社会還元を行うために、2018年に一般社団法人シネコカルチャーは創設されました。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>As of 2020, we have researchers and lecturers with backgrounds in biology, complex systems, information science, agriculture, design, curation, citizen science, who are working on various domains such as food production, education, city and living space planning, well-being, healthcare, etc. As a non-profit organization that promotes the possibilities of Synecoculture and augmented ecosystems broadly and impartially, we wish to further develop new world values through joint efforts with everyone who aspires to live in cooperation with all life on this planet.</p>
+<p>2020年現在、生物学・複雑系・情報科学・農学・デザイン・キュレーション・市民科学などのバックグラウンドを持つリサーチャーと講師陣を擁し、食料生産・教育・都市計画・住空間・介護福祉など様々な領域に研究・社会実装活動を展開しています。<br>協生農法・拡張生態系の可能性を広範かつ中立に推進する非営利組織として、当社団は今後とも皆さまと共に、全ての生命と協力しあって生きていく新しい世界価値の創出を目指して行きたいと思っています。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"right"} -->
-<p class="has-text-align-right">Masatoshi Funabashi<br>Founder and President</p>
+<p class="has-text-align-right">2020年12月<br>代表理事　舩橋 真俊</p>
 <!-- /wp:paragraph -->
