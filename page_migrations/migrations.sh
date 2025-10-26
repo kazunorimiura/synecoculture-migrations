@@ -49,6 +49,12 @@ fi
 ./migrations/page_migrations/message/migrations.sh
 
 ###
+### 支援・参加のマイグレーション
+###
+
+./migrations/page_migrations/join/migrations.sh
+
+###
 ### 組織概要のマイグレーション
 ###
 
