@@ -1,5 +1,5 @@
 <!-- wp:image {"id":4082,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2020/08/DSC01529-1024x680.jpeg" alt="六本木ヒルズ屋上・協生農園の風景" class="wp-image-1963"/><figcaption class="wp-element-caption">六本木ヒルズ屋上・協生農園</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="http://synecoculture.test/wp-content/uploads/2020/08/DSC01529-1024x680.jpeg" alt="六本木ヒルズ屋上・協生農園の風景" class="wp-image-4082"/><figcaption class="wp-element-caption">六本木ヒルズ屋上・協生農園</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
